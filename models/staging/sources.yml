@@ -1,0 +1,84 @@
+version: 2
+
+sources:
+  - name: ecommerce
+    description: Raw e-commerce data from ShopCo's transactional database
+    database: raw_data
+    schema: shopco_production
+
+    tables:
+      - name: raw_customers
+        description: Customer master table with demographic information
+        columns:
+          - name: customer_id
+            description: Primary key for customers
+            tests:
+              - unique
+              - not_null
+          - name: email
+            tests:
+              - not_null
+
+      - name: raw_orders
+        description: Order transactions with status, totals, and payment method
+        columns:
+          - name: order_id
+            tests:
+              - unique
+              - not_null
+          - name: customer_id
+            tests:
+              - not_null
+              - relationships:
+                  to: source('ecommerce', 'raw_customers')
+                  field: customer_id
+          - name: order_status
+            tests:
+              - accepted_values:
+                  values: ['pending', 'processing', 'shipped', 'delivered', 'cancelled']
+          - name: payment_method
+            description: Payment method used (credit_card, paypal, debit_card, bank_transfer, apple_pay)
+            tests:
+              - accepted_values:
+                  values: ['credit_card', 'paypal', 'debit_card', 'bank_transfer', 'apple_pay']
+
+      - name: raw_order_items
+        description: Line items for each order
+        columns:
+          - name: order_item_id
+            tests:
+              - unique
+              - not_null
+          - name: order_id
+            tests:
+              - not_null
+              - relationships:
+                  to: source('ecommerce', 'raw_orders')
+                  field: order_id
+          - name: product_id
+            tests:
+              - not_null
+              - relationships:
+                  to: source('ecommerce', 'raw_products')
+                  field: product_id
+
+      - name: raw_products
+        description: Product catalog with pricing and cost data
+        columns:
+          - name: product_id
+            tests:
+              - unique
+              - not_null
+
+      - name: raw_web_events
+        description: Website behavioural events (page views, add-to-cart, purchases)
+        columns:
+          - name: event_id
+            tests:
+              - unique
+              - not_null
+          - name: event_type
+            description: "Type of event: page_view, product_view, add_to_cart, checkout_start, purchase, search"
+            tests:
+              - accepted_values:
+                  values: ['page_view', 'product_view', 'add_to_cart', 'checkout_start', 'purchase', 'search']

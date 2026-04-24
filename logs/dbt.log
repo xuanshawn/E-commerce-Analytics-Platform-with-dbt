@@ -1,0 +1,1238 @@
+{"data":{"log_version":3,"version":"=2.0.0-preview.154"},"info":{"category":"","code":"A001","extra":{},"invocation_id":"019dc083-a4fb-7e21-9e57-92915a5957ba","level":"info","msg":"Running with dbt-fusion=2.0.0-preview.154","name":"MainReportVersion","pid":25508,"thread":"tokio-runtime-worker","ts":"2026-04-24T17:22:26.173686Z"}}
+{"data":{"args":{"debug":"false","invocation_command":"C:\\Users\\Xuan\\.local\\bin\\dbt.exe license info --json --log-format json","log_format":"json","quiet":"false","write_json":"true"}},"info":{"category":"","code":"A002","extra":{},"invocation_id":"019dc083-a4fb-7e21-9e57-92915a5957ba","level":"debug","msg":"running dbt-fusion with argumets {\"command\":\"license\",\"vars\":\"{}\",\"limit\":\"10\",\"debug\":false,\"log_format\":\"json\",\"quiet\":false,\"write_json\":true,\"write_catalog\":false}","name":"MainReportArgs","pid":25508,"thread":"tokio-runtime-worker","ts":"2026-04-24T17:22:26.173707Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"019dc083-a4fb-7e21-9e57-92915a5957ba","level":"debug","msg":"No active cloud project configured, skipping remote license","name":"Generic","pid":25508,"thread":"tokio-runtime-worker","ts":"2026-04-24T17:22:26.176038Z"}}
+{"data":{"columns":[],"is_inline":true,"node_name":"license_info","output_format":"json","preview":"{\n  \"status\": \"not_found\",\n  \"licensing_enabled\": true\n}","unique_id":"license.info"},"info":{"category":"","code":"Q041","extra":{},"invocation_id":"019dc083-a4fb-7e21-9e57-92915a5957ba","level":"info","msg":"{\n  \"status\": \"not_found\",\n  \"licensing_enabled\": true\n}","name":"ShowNode","pid":25508,"thread":"tokio-runtime-worker","ts":"2026-04-24T17:22:26.176487Z"}}
+{"data":{"completed_at":"2026-04-24T17:22:26.352982Z","elapsed":0.17944879829883575,"success":true},"info":{"category":"","code":"Q039","extra":{},"invocation_id":"019dc083-a4fb-7e21-9e57-92915a5957ba","level":"info","msg":"\n==================== Execution Summary =====================\nFinished 'license' successfully [179ms]","name":"CommandCompleted","pid":25508,"thread":"tokio-runtime-worker","ts":"2026-04-24T17:22:26.353091Z"}}
+{"data":{"log_version":3,"version":"=2.0.0-preview.154"},"info":{"category":"","code":"A001","extra":{},"invocation_id":"019dc091-6ec7-7700-a170-c12b54294c3e","level":"info","msg":"Running with dbt-fusion=2.0.0-preview.154","name":"MainReportVersion","pid":16420,"thread":"tokio-runtime-worker","ts":"2026-04-24T17:37:29.802213Z"}}
+{"data":{"args":{"debug":"false","invocation_command":"C:\\Users\\Xuan\\.local\\bin\\dbt.exe license info --json --log-format json","log_format":"json","quiet":"false","write_json":"true"}},"info":{"category":"","code":"A002","extra":{},"invocation_id":"019dc091-6ec7-7700-a170-c12b54294c3e","level":"debug","msg":"running dbt-fusion with argumets {\"command\":\"license\",\"vars\":\"{}\",\"limit\":\"10\",\"debug\":false,\"log_format\":\"json\",\"quiet\":false,\"write_json\":true,\"write_catalog\":false}","name":"MainReportArgs","pid":16420,"thread":"tokio-runtime-worker","ts":"2026-04-24T17:37:29.802235Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"019dc091-6ec7-7700-a170-c12b54294c3e","level":"debug","msg":"No active cloud project configured, skipping remote license","name":"Generic","pid":16420,"thread":"tokio-runtime-worker","ts":"2026-04-24T17:37:29.805017Z"}}
+{"data":{"columns":[],"is_inline":true,"node_name":"license_info","output_format":"json","preview":"{\n  \"status\": \"not_found\",\n  \"licensing_enabled\": true\n}","unique_id":"license.info"},"info":{"category":"","code":"Q041","extra":{},"invocation_id":"019dc091-6ec7-7700-a170-c12b54294c3e","level":"info","msg":"{\n  \"status\": \"not_found\",\n  \"licensing_enabled\": true\n}","name":"ShowNode","pid":16420,"thread":"tokio-runtime-worker","ts":"2026-04-24T17:37:29.805605Z"}}
+{"data":{"completed_at":"2026-04-24T17:37:29.983991Z","elapsed":0.18195270001888275,"success":true},"info":{"category":"","code":"Q039","extra":{},"invocation_id":"019dc091-6ec7-7700-a170-c12b54294c3e","level":"info","msg":"\n==================== Execution Summary =====================\nFinished 'license' successfully [181ms]","name":"CommandCompleted","pid":16420,"thread":"tokio-runtime-worker","ts":"2026-04-24T17:37:29.984115Z"}}
+[0m14:54:43.259988 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027A81D583D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027A846ACA30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027A846ACC70>]}
+
+
+============================== 14:54:43.268684 | 3fcc61bf-f1cf-454d-95fc-0f96f118dbd7 ==============================
+[0m14:54:43.268684 [info ] [MainThread]: Running with dbt=1.7.18
+[0m14:54:43.268684 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Xuan\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\Xuan\\shopco_analytics\\logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m14:54:43.269692 [info ] [MainThread]: dbt version: 1.7.18
+[0m14:54:43.269692 [info ] [MainThread]: python version: 3.8.5
+[0m14:54:43.269692 [info ] [MainThread]: python path: c:\users\xuan\shopco_analytics\venv\scripts\python.exe
+[0m14:54:43.270692 [info ] [MainThread]: os info: Windows-10-10.0.19041-SP0
+[0m14:54:43.721081 [info ] [MainThread]: Using profiles dir at C:\Users\Xuan\.dbt
+[0m14:54:43.721081 [info ] [MainThread]: Using profiles.yml file at C:\Users\Xuan\.dbt\profiles.yml
+[0m14:54:43.722083 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Xuan\shopco_analytics\dbt_project.yml
+[0m14:54:43.723082 [info ] [MainThread]: adapter type: snowflake
+[0m14:54:43.723082 [info ] [MainThread]: adapter version: 1.7.0
+[0m14:54:43.827082 [info ] [MainThread]: Configuration:
+[0m14:54:43.827082 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m14:54:43.828082 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m14:54:43.828082 [info ] [MainThread]: Required dependencies:
+[0m14:54:43.829081 [debug] [MainThread]: Executing "git --help"
+[0m14:54:43.869083 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:54:43.869083 [debug] [MainThread]: STDERR: "b''"
+[0m14:54:43.870083 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:54:43.870083 [info ] [MainThread]: Connection:
+[0m14:54:43.871083 [info ] [MainThread]:   account: FPNRVOP-GDC46181
+[0m14:54:43.871083 [info ] [MainThread]:   user: xdai
+[0m14:54:43.871083 [info ] [MainThread]:   database: ANALYTICS
+[0m14:54:43.872083 [info ] [MainThread]:   warehouse: TRANSFORMING
+[0m14:54:43.872083 [info ] [MainThread]:   role: TRANSFORMER
+[0m14:54:43.872083 [info ] [MainThread]:   schema: DEV_xdai
+[0m14:54:43.873083 [info ] [MainThread]:   authenticator: None
+[0m14:54:43.873083 [info ] [MainThread]:   private_key_path: None
+[0m14:54:43.874083 [info ] [MainThread]:   token: None
+[0m14:54:43.874083 [info ] [MainThread]:   oauth_client_id: None
+[0m14:54:43.874083 [info ] [MainThread]:   query_tag: None
+[0m14:54:43.875083 [info ] [MainThread]:   client_session_keep_alive: False
+[0m14:54:43.875083 [info ] [MainThread]:   host: None
+[0m14:54:43.875083 [info ] [MainThread]:   port: None
+[0m14:54:43.876083 [info ] [MainThread]:   proxy_host: None
+[0m14:54:43.876083 [info ] [MainThread]:   proxy_port: None
+[0m14:54:43.877083 [info ] [MainThread]:   protocol: None
+[0m14:54:43.877083 [info ] [MainThread]:   connect_retries: 1
+[0m14:54:43.877083 [info ] [MainThread]:   connect_timeout: None
+[0m14:54:43.878082 [info ] [MainThread]:   retry_on_database_errors: False
+[0m14:54:43.878082 [info ] [MainThread]:   retry_all: False
+[0m14:54:43.878082 [info ] [MainThread]:   insecure_mode: False
+[0m14:54:43.879082 [info ] [MainThread]:   reuse_connections: None
+[0m14:54:43.879082 [info ] [MainThread]: Registered adapter: snowflake=1.7.0
+[0m14:54:43.883085 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m14:54:43.884083 [debug] [MainThread]: Using snowflake connection "debug"
+[0m14:54:43.884083 [debug] [MainThread]: On debug: select 1 as id
+[0m14:54:43.885082 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:54:45.641021 [debug] [MainThread]: Snowflake adapter: Error running SQL: select 1 as id
+[0m14:54:45.642022 [debug] [MainThread]: Snowflake adapter: Rolling back transaction.
+[0m14:54:45.642022 [debug] [MainThread]: On debug: No close available on handle
+[0m14:54:45.643021 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m14:54:45.643021 [info ] [MainThread]: [31m1 check failed:[0m
+[0m14:54:45.643021 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  250001 (08001): Failed to connect to DB: FPNRVOP-GDC46181.snowflakecomputing.com:443. Role 'TRANSFORMER' specified in the connect string does not exist or not authorized. Contact your local system administrator, or attempt to login with another role, e.g. PUBLIC.
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m14:54:45.644021 [debug] [MainThread]: Command `dbt debug` failed at 14:54:45.644021 after 2.44 seconds
+[0m14:54:45.645021 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m14:54:45.645021 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027A81D583D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027A84F07D60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027A84F07EB0>]}
+[0m14:54:45.645021 [debug] [MainThread]: Flushing usage events
+[0m14:56:48.411220 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000140A3D48340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000140A66B7910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000140A66B7EE0>]}
+
+
+============================== 14:56:48.414219 | 2d564fe8-0756-4f5c-abe3-618480c13015 ==============================
+[0m14:56:48.414219 [info ] [MainThread]: Running with dbt=1.7.18
+[0m14:56:48.415215 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\Xuan\\.dbt', 'log_path': 'C:\\Users\\Xuan\\shopco_analytics\\logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt debug', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:56:48.415215 [info ] [MainThread]: dbt version: 1.7.18
+[0m14:56:48.415215 [info ] [MainThread]: python version: 3.8.5
+[0m14:56:48.416216 [info ] [MainThread]: python path: c:\users\xuan\shopco_analytics\venv\scripts\python.exe
+[0m14:56:48.416216 [info ] [MainThread]: os info: Windows-10-10.0.19041-SP0
+[0m14:56:48.692218 [info ] [MainThread]: Using profiles dir at C:\Users\Xuan\.dbt
+[0m14:56:48.692218 [info ] [MainThread]: Using profiles.yml file at C:\Users\Xuan\.dbt\profiles.yml
+[0m14:56:48.693215 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Xuan\shopco_analytics\dbt_project.yml
+[0m14:56:48.694215 [info ] [MainThread]: adapter type: snowflake
+[0m14:56:48.694215 [info ] [MainThread]: adapter version: 1.7.0
+[0m14:56:48.795217 [info ] [MainThread]: Configuration:
+[0m14:56:48.796217 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m14:56:48.796217 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m14:56:48.797217 [info ] [MainThread]: Required dependencies:
+[0m14:56:48.797217 [debug] [MainThread]: Executing "git --help"
+[0m14:56:48.836218 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:56:48.836218 [debug] [MainThread]: STDERR: "b''"
+[0m14:56:48.837218 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:56:48.837218 [info ] [MainThread]: Connection:
+[0m14:56:48.837218 [info ] [MainThread]:   account: FPNRVOP-GDC46181
+[0m14:56:48.838215 [info ] [MainThread]:   user: xdai
+[0m14:56:48.838215 [info ] [MainThread]:   database: ANALYTICS
+[0m14:56:48.839215 [info ] [MainThread]:   warehouse: TRANSFORMING
+[0m14:56:48.839215 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m14:56:48.839215 [info ] [MainThread]:   schema: DEV_xdai
+[0m14:56:48.840215 [info ] [MainThread]:   authenticator: None
+[0m14:56:48.840215 [info ] [MainThread]:   private_key_path: None
+[0m14:56:48.840215 [info ] [MainThread]:   token: None
+[0m14:56:48.841215 [info ] [MainThread]:   oauth_client_id: None
+[0m14:56:48.841215 [info ] [MainThread]:   query_tag: None
+[0m14:56:48.841215 [info ] [MainThread]:   client_session_keep_alive: False
+[0m14:56:48.842215 [info ] [MainThread]:   host: None
+[0m14:56:48.842215 [info ] [MainThread]:   port: None
+[0m14:56:48.843219 [info ] [MainThread]:   proxy_host: None
+[0m14:56:48.843219 [info ] [MainThread]:   proxy_port: None
+[0m14:56:48.843219 [info ] [MainThread]:   protocol: None
+[0m14:56:48.844217 [info ] [MainThread]:   connect_retries: 1
+[0m14:56:48.844217 [info ] [MainThread]:   connect_timeout: None
+[0m14:56:48.844217 [info ] [MainThread]:   retry_on_database_errors: False
+[0m14:56:48.845219 [info ] [MainThread]:   retry_all: False
+[0m14:56:48.845219 [info ] [MainThread]:   insecure_mode: False
+[0m14:56:48.845219 [info ] [MainThread]:   reuse_connections: None
+[0m14:56:48.846217 [info ] [MainThread]: Registered adapter: snowflake=1.7.0
+[0m14:56:48.846217 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m14:56:48.847216 [debug] [MainThread]: Using snowflake connection "debug"
+[0m14:56:48.847216 [debug] [MainThread]: On debug: select 1 as id
+[0m14:56:48.848217 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:56:50.030155 [debug] [MainThread]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m14:56:50.031155 [debug] [MainThread]: On debug: Close
+[0m14:56:50.138278 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m14:56:50.138278 [info ] [MainThread]: [32mAll checks passed![0m
+[0m14:56:50.139275 [debug] [MainThread]: Command `dbt debug` succeeded at 14:56:50.139275 after 1.78 seconds
+[0m14:56:50.139275 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m14:56:50.140278 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000140A3D48340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000140A6F9FE80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000140A6F9FC70>]}
+[0m14:56:50.140278 [debug] [MainThread]: Flushing usage events
+[0m15:09:47.176263 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E42D468BB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E42FDCD610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E42FDCDF70>]}
+
+
+============================== 15:09:47.179263 | 3d7130dd-4d6c-4449-bf6c-dede128e9b1e ==============================
+[0m15:09:47.179263 [info ] [MainThread]: Running with dbt=1.7.18
+[0m15:09:47.180263 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\Xuan\\shopco_analytics\\logs', 'profiles_dir': 'C:\\Users\\Xuan\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt build', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:09:47.719986 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3d7130dd-4d6c-4449-bf6c-dede128e9b1e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E42FDB7F10>]}
+[0m15:09:47.796994 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3d7130dd-4d6c-4449-bf6c-dede128e9b1e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E4305F1B20>]}
+[0m15:09:47.797994 [info ] [MainThread]: Registered adapter: snowflake=1.7.0
+[0m15:09:47.804995 [debug] [MainThread]: checksum: 7ef98830ab3f0215d011ffa635e2417c6313d5b77f40f33d534bad4eb8784f08, vars: {}, profile: , target: , version: 1.7.18
+[0m15:09:47.805994 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m15:09:47.806995 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '3d7130dd-4d6c-4449-bf6c-dede128e9b1e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E43073E760>]}
+[0m15:09:49.481010 [error] [MainThread]: Encountered an error:
+Compilation Error in test relationships_fact_orders_ref_dim_customers___customer_id__customer_id (models\marts\schema.yml)
+  macro 'dbt_macro__test_relationships' takes no keyword argument 'arguments'
+[0m15:09:49.482009 [debug] [MainThread]: Command `dbt build` failed at 15:09:49.482009 after 2.36 seconds
+[0m15:09:49.482009 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E42D468BB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E431C338E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E431DA4A90>]}
+[0m15:09:49.482009 [debug] [MainThread]: Flushing usage events
+[0m15:12:21.219653 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001749CBD8C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001749F52E760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001749F534C40>]}
+
+
+============================== 15:12:21.222653 | b56e558e-0491-4f51-a260-067bd1546816 ==============================
+[0m15:12:21.222653 [info ] [MainThread]: Running with dbt=1.7.18
+[0m15:12:21.222653 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Xuan\\.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\Xuan\\shopco_analytics\\logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt seed', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:12:21.635654 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b56e558e-0491-4f51-a260-067bd1546816', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001749F597DC0>]}
+[0m15:12:21.712652 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b56e558e-0491-4f51-a260-067bd1546816', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001749F50BD90>]}
+[0m15:12:21.713653 [info ] [MainThread]: Registered adapter: snowflake=1.7.0
+[0m15:12:21.720652 [debug] [MainThread]: checksum: 7ef98830ab3f0215d011ffa635e2417c6313d5b77f40f33d534bad4eb8784f08, vars: {}, profile: , target: , version: 1.7.18
+[0m15:12:21.721653 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m15:12:21.722653 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'b56e558e-0491-4f51-a260-067bd1546816', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001749FE6A910>]}
+[0m15:12:23.364608 [error] [MainThread]: Encountered an error:
+Compilation Error in test relationships_fact_orders_ref_dim_customers___customer_id__customer_id (models\marts\schema.yml)
+  macro 'dbt_macro__test_relationships' takes no keyword argument 'arguments'
+[0m15:12:23.365607 [debug] [MainThread]: Command `dbt seed` failed at 15:12:23.365607 after 2.20 seconds
+[0m15:12:23.365607 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001749CBD8C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000174A13C75B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000174A13F0400>]}
+[0m15:12:23.366608 [debug] [MainThread]: Flushing usage events
+[0m15:22:29.627317 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E33DF1C40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E36743BE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E367435E0>]}
+
+
+============================== 15:22:29.629317 | d93d9834-e053-4065-b4af-96206ee438c1 ==============================
+[0m15:22:29.629317 [info ] [MainThread]: Running with dbt=1.7.18
+[0m15:22:29.630318 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\Xuan\\shopco_analytics\\logs', 'profiles_dir': 'C:\\Users\\Xuan\\.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt seed', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:22:30.039317 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd93d9834-e053-4065-b4af-96206ee438c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E3362C2B0>]}
+[0m15:22:30.117317 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd93d9834-e053-4065-b4af-96206ee438c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E37004F10>]}
+[0m15:22:30.118318 [info ] [MainThread]: Registered adapter: snowflake=1.7.0
+[0m15:22:30.125318 [debug] [MainThread]: checksum: 7ef98830ab3f0215d011ffa635e2417c6313d5b77f40f33d534bad4eb8784f08, vars: {}, profile: , target: , version: 1.7.18
+[0m15:22:30.126317 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m15:22:30.127317 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'd93d9834-e053-4065-b4af-96206ee438c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E370B8A60>]}
+[0m15:22:31.897102 [error] [MainThread]: Encountered an error:
+Compilation Error in test relationships_stg_orders_ref_stg_customers___customer_id__customer_id (models\staging\stg_orders.yml)
+  macro 'dbt_macro__test_relationships' takes no keyword argument 'arguments'
+[0m15:22:31.898100 [debug] [MainThread]: Command `dbt seed` failed at 15:22:31.897102 after 2.33 seconds
+[0m15:22:31.898100 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E33DF1C40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E373CC100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E388282E0>]}
+[0m15:22:31.898100 [debug] [MainThread]: Flushing usage events
+[0m15:24:38.842489 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002843C861BB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002843F1BD9A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002843F1BD6A0>]}
+
+
+============================== 15:24:38.845489 | cdcb0a9e-80a5-4628-9c5d-4b509b3be180 ==============================
+[0m15:24:38.845489 [info ] [MainThread]: Running with dbt=1.7.18
+[0m15:24:38.845489 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Xuan\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\Xuan\\shopco_analytics\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt seed', 'send_anonymous_usage_stats': 'True'}
+[0m15:24:39.254662 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cdcb0a9e-80a5-4628-9c5d-4b509b3be180', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002843F1BD9A0>]}
+[0m15:24:39.333660 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cdcb0a9e-80a5-4628-9c5d-4b509b3be180', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002843FA842E0>]}
+[0m15:24:39.334661 [info ] [MainThread]: Registered adapter: snowflake=1.7.0
+[0m15:24:39.342662 [debug] [MainThread]: checksum: 7ef98830ab3f0215d011ffa635e2417c6313d5b77f40f33d534bad4eb8784f08, vars: {}, profile: , target: , version: 1.7.18
+[0m15:24:39.343662 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m15:24:39.343662 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'cdcb0a9e-80a5-4628-9c5d-4b509b3be180', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002843FB24730>]}
+[0m15:24:41.213670 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'cdcb0a9e-80a5-4628-9c5d-4b509b3be180', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002844139E7F0>]}
+[0m15:24:41.230651 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'cdcb0a9e-80a5-4628-9c5d-4b509b3be180', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002844139ED60>]}
+[0m15:24:41.231660 [info ] [MainThread]: Found 15 models, 1 snapshot, 4 analyses, 5 seeds, 56 tests, 5 sources, 0 exposures, 0 metrics, 430 macros, 0 groups, 0 semantic models
+[0m15:24:41.231660 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cdcb0a9e-80a5-4628-9c5d-4b509b3be180', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002844139E7F0>]}
+[0m15:24:41.233660 [info ] [MainThread]: 
+[0m15:24:41.234660 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m15:24:41.236659 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_raw_data'
+[0m15:24:41.247663 [debug] [ThreadPool]: Using snowflake connection "list_raw_data"
+[0m15:24:41.248663 [debug] [ThreadPool]: On list_raw_data: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "connection_name": "list_raw_data"} */
+show terse schemas in database raw_data
+    limit 10000
+[0m15:24:41.248663 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:24:42.478810 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01c3ee2a-0001-6d81-0000-001b91e75059
+[0m15:24:42.479810 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+[0m15:24:42.479810 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_schemas
+[0m15:24:42.479810 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m15:24:42.480813 [debug] [ThreadPool]: On list_raw_data: Close
+[0m15:24:42.590969 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:24:42.591968 [debug] [MainThread]: Connection 'list_raw_data' was properly closed.
+[0m15:24:42.591968 [info ] [MainThread]: 
+[0m15:24:42.591968 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 1.36 seconds (1.36s).
+[0m15:24:42.592969 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Database error while listing schemas in database "raw_data"
+  Database Error
+    002043 (02000): SQL compilation error:
+    Object does not exist, or operation cannot be performed.
+[0m15:24:42.593969 [debug] [MainThread]: Command `dbt seed` failed at 15:24:42.592969 after 3.81 seconds
+[0m15:24:42.593969 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002843C861BB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002844118B1C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028441459280>]}
+[0m15:24:42.593969 [debug] [MainThread]: Flushing usage events
+[0m15:44:41.329165 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D69E5F8F40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D6A0F4B640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D6A0F4BFA0>]}
+
+
+============================== 15:44:41.337165 | 1da5fabe-7aea-4711-9a16-6b953d0d37aa ==============================
+[0m15:44:41.337165 [info ] [MainThread]: Running with dbt=1.7.18
+[0m15:44:41.338165 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\Xuan\\shopco_analytics\\logs', 'profiles_dir': 'C:\\Users\\Xuan\\.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt seed', 'send_anonymous_usage_stats': 'True'}
+[0m15:44:41.990085 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1da5fabe-7aea-4711-9a16-6b953d0d37aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D6A0F52FD0>]}
+[0m15:44:42.070084 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1da5fabe-7aea-4711-9a16-6b953d0d37aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D6A17E6220>]}
+[0m15:44:42.071084 [info ] [MainThread]: Registered adapter: snowflake=1.7.0
+[0m15:44:42.079085 [debug] [MainThread]: checksum: 7ef98830ab3f0215d011ffa635e2417c6313d5b77f40f33d534bad4eb8784f08, vars: {}, profile: , target: , version: 1.7.18
+[0m15:44:42.225585 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:44:42.226585 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:44:42.233585 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1da5fabe-7aea-4711-9a16-6b953d0d37aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D6A1B4F550>]}
+[0m15:44:42.256128 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1da5fabe-7aea-4711-9a16-6b953d0d37aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D6A19B8370>]}
+[0m15:44:42.257137 [info ] [MainThread]: Found 15 models, 1 snapshot, 4 analyses, 5 seeds, 56 tests, 5 sources, 0 exposures, 0 metrics, 430 macros, 0 groups, 0 semantic models
+[0m15:44:42.257137 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1da5fabe-7aea-4711-9a16-6b953d0d37aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D6A19B8A60>]}
+[0m15:44:42.260136 [info ] [MainThread]: 
+[0m15:44:42.260136 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m15:44:42.262136 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_raw_data'
+[0m15:44:42.274135 [debug] [ThreadPool]: Using snowflake connection "list_raw_data"
+[0m15:44:42.274135 [debug] [ThreadPool]: On list_raw_data: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "connection_name": "list_raw_data"} */
+show terse schemas in database raw_data
+    limit 10000
+[0m15:44:42.274135 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:44:43.505023 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01c3ee40-0001-6d81-0000-001b91e750d9
+[0m15:44:43.505023 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+[0m15:44:43.506023 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_schemas
+[0m15:44:43.506023 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m15:44:43.506023 [debug] [ThreadPool]: On list_raw_data: Close
+[0m15:44:43.614204 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:44:43.614204 [debug] [MainThread]: Connection 'list_raw_data' was properly closed.
+[0m15:44:43.614204 [info ] [MainThread]: 
+[0m15:44:43.615204 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 1.35 seconds (1.35s).
+[0m15:44:43.615204 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Database error while listing schemas in database "raw_data"
+  Database Error
+    002043 (02000): SQL compilation error:
+    Object does not exist, or operation cannot be performed.
+[0m15:44:43.616204 [debug] [MainThread]: Command `dbt seed` failed at 15:44:43.616204 after 2.34 seconds
+[0m15:44:43.617204 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D69E5F8F40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D6A1B5B640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D6A19B8AF0>]}
+[0m15:44:43.617204 [debug] [MainThread]: Flushing usage events
+[0m15:45:41.114541 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001725D21AC10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001725FB7D760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001725FB75C40>]}
+
+
+============================== 15:45:41.117540 | ad8a6077-9f56-42fe-a0c9-f072ab08274e ==============================
+[0m15:45:41.117540 [info ] [MainThread]: Running with dbt=1.7.18
+[0m15:45:41.117540 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\Xuan\\.dbt', 'log_path': 'C:\\Users\\Xuan\\shopco_analytics\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt seed', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m15:45:41.530538 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ad8a6077-9f56-42fe-a0c9-f072ab08274e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001725FBD6DC0>]}
+[0m15:45:41.608540 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ad8a6077-9f56-42fe-a0c9-f072ab08274e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001725FB4BD90>]}
+[0m15:45:41.609542 [info ] [MainThread]: Registered adapter: snowflake=1.7.0
+[0m15:45:41.617541 [debug] [MainThread]: checksum: 7ef98830ab3f0215d011ffa635e2417c6313d5b77f40f33d534bad4eb8784f08, vars: {}, profile: , target: , version: 1.7.18
+[0m15:45:41.749539 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:45:41.749539 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:45:41.757541 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ad8a6077-9f56-42fe-a0c9-f072ab08274e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001726075F4C0>]}
+[0m15:45:41.775452 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ad8a6077-9f56-42fe-a0c9-f072ab08274e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000172605C72E0>]}
+[0m15:45:41.775976 [info ] [MainThread]: Found 15 models, 1 snapshot, 4 analyses, 5 seeds, 56 tests, 5 sources, 0 exposures, 0 metrics, 430 macros, 0 groups, 0 semantic models
+[0m15:45:41.776504 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ad8a6077-9f56-42fe-a0c9-f072ab08274e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000172605C79D0>]}
+[0m15:45:41.779143 [info ] [MainThread]: 
+[0m15:45:41.780178 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m15:45:41.781249 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_raw_data'
+[0m15:45:41.795419 [debug] [ThreadPool]: Using snowflake connection "list_raw_data"
+[0m15:45:41.795946 [debug] [ThreadPool]: On list_raw_data: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "connection_name": "list_raw_data"} */
+show terse schemas in database raw_data
+    limit 10000
+[0m15:45:41.795946 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:45:43.037849 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.0 seconds
+[0m15:45:43.038849 [debug] [ThreadPool]: On list_raw_data: Close
+[0m15:45:43.137849 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_raw_data, now create_raw_data_DEV_xdai_shopco_production)
+[0m15:45:43.138848 [debug] [ThreadPool]: Creating schema "database: "raw_data"
+schema: "DEV_xdai_shopco_production"
+"
+[0m15:45:43.144849 [debug] [ThreadPool]: Using snowflake connection "create_raw_data_DEV_xdai_shopco_production"
+[0m15:45:43.144849 [debug] [ThreadPool]: On create_raw_data_DEV_xdai_shopco_production: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "connection_name": "create_raw_data_DEV_xdai_shopco_production"} */
+create schema if not exists raw_data.DEV_xdai_shopco_production
+[0m15:45:43.144849 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:45:44.143183 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m15:45:44.144183 [debug] [ThreadPool]: On create_raw_data_DEV_xdai_shopco_production: Close
+[0m15:45:44.243432 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS_DEV_xdai_marts'
+[0m15:45:44.244431 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS_DEV_xdai_staging'
+[0m15:45:44.252430 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS_DEV_xdai_marts"
+[0m15:45:44.253430 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_raw_data_DEV_xdai_shopco_production'
+[0m15:45:44.255432 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS_DEV_xdai_staging"
+[0m15:45:44.255432 [debug] [ThreadPool]: On list_ANALYTICS_DEV_xdai_marts: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "connection_name": "list_ANALYTICS_DEV_xdai_marts"} */
+show terse objects in ANALYTICS.DEV_xdai_marts limit 10000
+[0m15:45:44.256429 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS_snapshots'
+[0m15:45:44.258432 [debug] [ThreadPool]: Using snowflake connection "list_raw_data_DEV_xdai_shopco_production"
+[0m15:45:44.258432 [debug] [ThreadPool]: On list_ANALYTICS_DEV_xdai_staging: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "connection_name": "list_ANALYTICS_DEV_xdai_staging"} */
+show terse objects in ANALYTICS.DEV_xdai_staging limit 10000
+[0m15:45:44.259431 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:45:44.261431 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS_snapshots"
+[0m15:45:44.262433 [debug] [ThreadPool]: On list_raw_data_DEV_xdai_shopco_production: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "connection_name": "list_raw_data_DEV_xdai_shopco_production"} */
+show terse objects in raw_data.DEV_xdai_shopco_production limit 10000
+[0m15:45:44.262433 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:45:44.263430 [debug] [ThreadPool]: On list_ANALYTICS_snapshots: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "connection_name": "list_ANALYTICS_snapshots"} */
+show terse objects in ANALYTICS.snapshots limit 10000
+[0m15:45:44.263430 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:45:44.265432 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:45:44.602860 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01c3ee41-0001-6d81-0000-001b91e750fd
+[0m15:45:44.603861 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+[0m15:45:44.603861 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_relations_without_caching
+[0m15:45:44.603861 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m15:45:44.604861 [debug] [ThreadPool]: On list_ANALYTICS_DEV_xdai_staging: Close
+[0m15:45:44.626703 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:45:44.627707 [debug] [ThreadPool]: On list_raw_data_DEV_xdai_shopco_production: Close
+[0m15:45:45.200692 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01c3ee41-0001-6b87-0000-001b91e76149
+[0m15:45:45.200692 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+[0m15:45:45.201693 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_relations_without_caching
+[0m15:45:45.201693 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m15:45:45.201693 [debug] [ThreadPool]: On list_ANALYTICS_snapshots: Close
+[0m15:45:45.217586 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01c3ee41-0001-6d7e-0000-001b91e780d1
+[0m15:45:45.218586 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+[0m15:45:45.218586 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_relations_without_caching
+[0m15:45:45.219588 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m15:45:45.219588 [debug] [ThreadPool]: On list_ANALYTICS_DEV_xdai_marts: Close
+[0m15:45:45.346649 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ad8a6077-9f56-42fe-a0c9-f072ab08274e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017260930FA0>]}
+[0m15:45:45.347645 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:45:45.348646 [info ] [MainThread]: 
+[0m15:45:45.388828 [debug] [Thread-1  ]: Began running node seed.shopco_analytics.raw_customers
+[0m15:45:45.388828 [debug] [Thread-2  ]: Began running node seed.shopco_analytics.raw_order_items
+[0m15:45:45.389828 [debug] [Thread-3  ]: Began running node seed.shopco_analytics.raw_orders
+[0m15:45:45.390828 [debug] [Thread-4  ]: Began running node seed.shopco_analytics.raw_products
+[0m15:45:45.389828 [info ] [Thread-1  ]: 1 of 5 START seed file raw_data.DEV_xdai_shopco_production.raw_customers ....... [RUN]
+[0m15:45:45.390828 [info ] [Thread-2  ]: 2 of 5 START seed file raw_data.DEV_xdai_shopco_production.raw_order_items ..... [RUN]
+[0m15:45:45.391827 [info ] [Thread-3  ]: 3 of 5 START seed file raw_data.DEV_xdai_shopco_production.raw_orders .......... [RUN]
+[0m15:45:45.391827 [info ] [Thread-4  ]: 4 of 5 START seed file raw_data.DEV_xdai_shopco_production.raw_products ........ [RUN]
+[0m15:45:45.392829 [debug] [Thread-1  ]: Acquiring new snowflake connection 'seed.shopco_analytics.raw_customers'
+[0m15:45:45.393827 [debug] [Thread-2  ]: Acquiring new snowflake connection 'seed.shopco_analytics.raw_order_items'
+[0m15:45:45.393827 [debug] [Thread-3  ]: Acquiring new snowflake connection 'seed.shopco_analytics.raw_orders'
+[0m15:45:45.394828 [debug] [Thread-4  ]: Acquiring new snowflake connection 'seed.shopco_analytics.raw_products'
+[0m15:45:45.395830 [debug] [Thread-2  ]: Began compiling node seed.shopco_analytics.raw_order_items
+[0m15:45:45.395830 [debug] [Thread-3  ]: Began compiling node seed.shopco_analytics.raw_orders
+[0m15:45:45.395830 [debug] [Thread-1  ]: Began compiling node seed.shopco_analytics.raw_customers
+[0m15:45:45.396829 [debug] [Thread-4  ]: Began compiling node seed.shopco_analytics.raw_products
+[0m15:45:45.396829 [debug] [Thread-2  ]: Timing info for seed.shopco_analytics.raw_order_items (compile): 15:45:45.396829 => 15:45:45.396829
+[0m15:45:45.397831 [debug] [Thread-3  ]: Timing info for seed.shopco_analytics.raw_orders (compile): 15:45:45.397831 => 15:45:45.397831
+[0m15:45:45.397831 [debug] [Thread-1  ]: Timing info for seed.shopco_analytics.raw_customers (compile): 15:45:45.397831 => 15:45:45.397831
+[0m15:45:45.398832 [debug] [Thread-4  ]: Timing info for seed.shopco_analytics.raw_products (compile): 15:45:45.397831 => 15:45:45.397831
+[0m15:45:45.398832 [debug] [Thread-2  ]: Began executing node seed.shopco_analytics.raw_order_items
+[0m15:45:45.398832 [debug] [Thread-3  ]: Began executing node seed.shopco_analytics.raw_orders
+[0m15:45:45.399832 [debug] [Thread-1  ]: Began executing node seed.shopco_analytics.raw_customers
+[0m15:45:45.399832 [debug] [Thread-4  ]: Began executing node seed.shopco_analytics.raw_products
+[0m15:45:45.441829 [debug] [Thread-4  ]: Using snowflake connection "seed.shopco_analytics.raw_products"
+[0m15:45:45.443828 [debug] [Thread-4  ]: On seed.shopco_analytics.raw_products: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "node_id": "seed.shopco_analytics.raw_products"} */
+create table raw_data.DEV_xdai_shopco_production.raw_products (product_id text,product_name text,category text,subcategory text,brand text,current_price float8,cost float8)
+[0m15:45:45.454828 [debug] [Thread-4  ]: Opening a new connection, currently in state init
+[0m15:45:45.455831 [debug] [Thread-1  ]: Using snowflake connection "seed.shopco_analytics.raw_customers"
+[0m15:45:45.458830 [debug] [Thread-1  ]: On seed.shopco_analytics.raw_customers: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "node_id": "seed.shopco_analytics.raw_customers"} */
+create table raw_data.DEV_xdai_shopco_production.raw_customers (customer_id text,email text,first_name text,last_name text,country text,customer_tier text,created_at timestamp without time zone)
+[0m15:45:45.459828 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+[0m15:45:45.515827 [debug] [Thread-3  ]: Using snowflake connection "seed.shopco_analytics.raw_orders"
+[0m15:45:45.516829 [debug] [Thread-3  ]: On seed.shopco_analytics.raw_orders: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "node_id": "seed.shopco_analytics.raw_orders"} */
+create table raw_data.DEV_xdai_shopco_production.raw_orders (order_id text,customer_id text,order_date timestamp without time zone,order_status text,total_amount float8,payment_method text)
+[0m15:45:45.551827 [debug] [Thread-3  ]: Opening a new connection, currently in state init
+[0m15:45:45.598828 [debug] [Thread-2  ]: Using snowflake connection "seed.shopco_analytics.raw_order_items"
+[0m15:45:45.600829 [debug] [Thread-2  ]: On seed.shopco_analytics.raw_order_items: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "node_id": "seed.shopco_analytics.raw_order_items"} */
+create table raw_data.DEV_xdai_shopco_production.raw_order_items (order_item_id text,order_id text,product_id text,quantity integer,unit_price float8)
+[0m15:45:45.601829 [debug] [Thread-2  ]: Opening a new connection, currently in state init
+[0m15:45:46.031717 [debug] [Thread-4  ]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m15:45:46.046717 [debug] [Thread-4  ]: Using snowflake connection "seed.shopco_analytics.raw_products"
+[0m15:45:46.047716 [debug] [Thread-4  ]: On seed.shopco_analytics.raw_products: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "node_id": "seed.shopco_analytics.raw_products"} */
+BEGIN
+[0m15:45:46.048717 [debug] [Thread-3  ]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m15:45:46.048717 [debug] [Thread-2  ]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m15:45:46.085718 [debug] [Thread-3  ]: Using snowflake connection "seed.shopco_analytics.raw_orders"
+[0m15:45:46.165362 [debug] [Thread-3  ]: On seed.shopco_analytics.raw_orders: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "node_id": "seed.shopco_analytics.raw_orders"} */
+BEGIN
+[0m15:45:46.177361 [debug] [Thread-2  ]: Using snowflake connection "seed.shopco_analytics.raw_order_items"
+[0m15:45:46.178361 [debug] [Thread-2  ]: On seed.shopco_analytics.raw_order_items: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "node_id": "seed.shopco_analytics.raw_order_items"} */
+BEGIN
+[0m15:45:46.179364 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m15:45:46.190361 [debug] [Thread-1  ]: Using snowflake connection "seed.shopco_analytics.raw_customers"
+[0m15:45:46.191362 [debug] [Thread-1  ]: On seed.shopco_analytics.raw_customers: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "node_id": "seed.shopco_analytics.raw_customers"} */
+BEGIN
+[0m15:45:46.340563 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m15:45:46.359561 [debug] [Thread-1  ]: Using snowflake connection "seed.shopco_analytics.raw_customers"
+[0m15:45:46.359561 [debug] [Thread-1  ]: On seed.shopco_analytics.raw_customers: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "node_id": "seed.shopco_analytics.raw_customers"} */
+insert into raw_data.DEV_xdai_shopco_production.raw_customers (customer_id, email, first_name, last_name, country, customer_tier, created_at) values
+            (%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),...
+[0m15:45:46.367562 [debug] [Thread-2  ]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m15:45:46.672576 [debug] [Thread-4  ]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m15:45:46.673576 [debug] [Thread-3  ]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m15:45:46.691576 [debug] [Thread-2  ]: Using snowflake connection "seed.shopco_analytics.raw_order_items"
+[0m15:45:46.694576 [debug] [Thread-4  ]: Using snowflake connection "seed.shopco_analytics.raw_products"
+[0m15:45:46.736575 [debug] [Thread-2  ]: On seed.shopco_analytics.raw_order_items: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "node_id": "seed.shopco_analytics.raw_order_items"} */
+insert into raw_data.DEV_xdai_shopco_production.raw_order_items (order_item_id, order_id, product_id, quantity, unit_price) values
+            (%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%...
+[0m15:45:46.793576 [debug] [Thread-3  ]: Using snowflake connection "seed.shopco_analytics.raw_orders"
+[0m15:45:46.794576 [debug] [Thread-4  ]: On seed.shopco_analytics.raw_products: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "node_id": "seed.shopco_analytics.raw_products"} */
+insert into raw_data.DEV_xdai_shopco_production.raw_products (product_id, product_name, category, subcategory, brand, current_price, cost) values
+            (%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,...
+[0m15:45:46.832575 [debug] [Thread-3  ]: On seed.shopco_analytics.raw_orders: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "node_id": "seed.shopco_analytics.raw_orders"} */
+insert into raw_data.DEV_xdai_shopco_production.raw_orders (order_id, customer_id, order_date, order_status, total_amount, payment_method) values
+            (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,...
+[0m15:45:46.971159 [debug] [Thread-1  ]: Snowflake adapter: Snowflake query id: 01c3ee42-0001-6d81-0000-001b91e7510d
+[0m15:45:46.971159 [debug] [Thread-1  ]: Snowflake adapter: Snowflake error: 000606 (57P03): No active warehouse selected in the current session.  Select an active warehouse with the 'use warehouse' command.
+
+[0m15:45:46.972159 [debug] [Thread-1  ]: Timing info for seed.shopco_analytics.raw_customers (execute): 15:45:45.422829 => 15:45:46.972159
+[0m15:45:46.972159 [debug] [Thread-1  ]: On seed.shopco_analytics.raw_customers: Close
+[0m15:45:47.120282 [debug] [Thread-1  ]: Database Error in seed raw_customers (seeds\raw_customers.csv)
+  000606 (57P03): No active warehouse selected in the current session.  Select an active warehouse with the 'use warehouse' command.
+  
+[0m15:45:47.121284 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ad8a6077-9f56-42fe-a0c9-f072ab08274e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000172619AA9D0>]}
+[0m15:45:47.121284 [error] [Thread-1  ]: 1 of 5 ERROR loading seed file DEV_xdai_shopco_production.raw_customers ........ [[31mERROR[0m in 1.73s]
+[0m15:45:47.122283 [debug] [Thread-1  ]: Finished running node seed.shopco_analytics.raw_customers
+[0m15:45:47.122283 [debug] [Thread-1  ]: Began running node seed.shopco_analytics.raw_web_events
+[0m15:45:47.123284 [info ] [Thread-1  ]: 5 of 5 START seed file raw_data.DEV_xdai_shopco_production.raw_web_events ...... [RUN]
+[0m15:45:47.124283 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly seed.shopco_analytics.raw_customers, now seed.shopco_analytics.raw_web_events)
+[0m15:45:47.124283 [debug] [Thread-1  ]: Began compiling node seed.shopco_analytics.raw_web_events
+[0m15:45:47.124283 [debug] [Thread-1  ]: Timing info for seed.shopco_analytics.raw_web_events (compile): 15:45:47.124283 => 15:45:47.124283
+[0m15:45:47.125284 [debug] [Thread-1  ]: Began executing node seed.shopco_analytics.raw_web_events
+[0m15:45:47.195284 [debug] [Thread-1  ]: Using snowflake connection "seed.shopco_analytics.raw_web_events"
+[0m15:45:47.196284 [debug] [Thread-1  ]: On seed.shopco_analytics.raw_web_events: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "node_id": "seed.shopco_analytics.raw_web_events"} */
+create table raw_data.DEV_xdai_shopco_production.raw_web_events (event_id text,session_id text,customer_id text,event_type text,page_url text,event_timestamp timestamp without time zone,product_id text)
+[0m15:45:47.196284 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:45:47.287408 [debug] [Thread-4  ]: Snowflake adapter: Snowflake query id: 01c3ee42-0001-6b87-0000-001b91e76155
+[0m15:45:47.288409 [debug] [Thread-4  ]: Snowflake adapter: Snowflake error: 000606 (57P03): No active warehouse selected in the current session.  Select an active warehouse with the 'use warehouse' command.
+
+[0m15:45:47.288409 [debug] [Thread-4  ]: Timing info for seed.shopco_analytics.raw_products (execute): 15:45:45.424829 => 15:45:47.288409
+[0m15:45:47.289409 [debug] [Thread-4  ]: On seed.shopco_analytics.raw_products: Close
+[0m15:45:47.392575 [debug] [Thread-4  ]: Database Error in seed raw_products (seeds\raw_products.csv)
+  000606 (57P03): No active warehouse selected in the current session.  Select an active warehouse with the 'use warehouse' command.
+  
+[0m15:45:47.392575 [debug] [Thread-4  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ad8a6077-9f56-42fe-a0c9-f072ab08274e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000172609993D0>]}
+[0m15:45:47.393575 [error] [Thread-4  ]: 4 of 5 ERROR loading seed file DEV_xdai_shopco_production.raw_products ......... [[31mERROR[0m in 2.00s]
+[0m15:45:47.394575 [debug] [Thread-4  ]: Finished running node seed.shopco_analytics.raw_products
+[0m15:45:47.682066 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m15:45:47.744066 [debug] [Thread-1  ]: Using snowflake connection "seed.shopco_analytics.raw_web_events"
+[0m15:45:47.744066 [debug] [Thread-1  ]: On seed.shopco_analytics.raw_web_events: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "node_id": "seed.shopco_analytics.raw_web_events"} */
+BEGIN
+[0m15:45:47.890578 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m15:45:48.118575 [debug] [Thread-1  ]: Using snowflake connection "seed.shopco_analytics.raw_web_events"
+[0m15:45:48.118575 [debug] [Thread-1  ]: On seed.shopco_analytics.raw_web_events: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "node_id": "seed.shopco_analytics.raw_web_events"} */
+insert into raw_data.DEV_xdai_shopco_production.raw_web_events (event_id, session_id, customer_id, event_type, page_url, event_timestamp, product_id) values
+            (%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%...
+[0m15:45:48.158578 [debug] [Thread-3  ]: Snowflake adapter: Snowflake query id: 01c3ee42-0001-6b87-0000-001b91e76159
+[0m15:45:48.159576 [debug] [Thread-3  ]: Snowflake adapter: Snowflake error: 000606 (57P03): No active warehouse selected in the current session.  Select an active warehouse with the 'use warehouse' command.
+
+[0m15:45:48.159576 [debug] [Thread-3  ]: Timing info for seed.shopco_analytics.raw_orders (execute): 15:45:45.419827 => 15:45:48.159576
+[0m15:45:48.160575 [debug] [Thread-3  ]: On seed.shopco_analytics.raw_orders: Close
+[0m15:45:48.278016 [debug] [Thread-3  ]: Database Error in seed raw_orders (seeds\raw_orders.csv)
+  000606 (57P03): No active warehouse selected in the current session.  Select an active warehouse with the 'use warehouse' command.
+  
+[0m15:45:48.279076 [debug] [Thread-3  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ad8a6077-9f56-42fe-a0c9-f072ab08274e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017262039FD0>]}
+[0m15:45:48.279602 [error] [Thread-3  ]: 3 of 5 ERROR loading seed file DEV_xdai_shopco_production.raw_orders ........... [[31mERROR[0m in 2.88s]
+[0m15:45:48.280123 [debug] [Thread-3  ]: Finished running node seed.shopco_analytics.raw_orders
+[0m15:45:48.846515 [debug] [Thread-2  ]: Snowflake adapter: Snowflake query id: 01c3ee42-0001-6d7e-0000-001b91e780d9
+[0m15:45:48.846515 [debug] [Thread-2  ]: Snowflake adapter: Snowflake error: 000606 (57P03): No active warehouse selected in the current session.  Select an active warehouse with the 'use warehouse' command.
+
+[0m15:45:48.847515 [debug] [Thread-2  ]: Timing info for seed.shopco_analytics.raw_order_items (execute): 15:45:45.400832 => 15:45:48.847515
+[0m15:45:48.847515 [debug] [Thread-2  ]: On seed.shopco_analytics.raw_order_items: Close
+[0m15:45:48.965949 [debug] [Thread-2  ]: Database Error in seed raw_order_items (seeds\raw_order_items.csv)
+  000606 (57P03): No active warehouse selected in the current session.  Select an active warehouse with the 'use warehouse' command.
+  
+[0m15:45:48.966950 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ad8a6077-9f56-42fe-a0c9-f072ab08274e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017261ABCF10>]}
+[0m15:45:48.966950 [error] [Thread-2  ]: 2 of 5 ERROR loading seed file DEV_xdai_shopco_production.raw_order_items ...... [[31mERROR[0m in 3.57s]
+[0m15:45:48.967949 [debug] [Thread-2  ]: Finished running node seed.shopco_analytics.raw_order_items
+[0m15:45:49.672529 [debug] [Thread-1  ]: Snowflake adapter: Snowflake query id: 01c3ee42-0001-6d7e-0000-001b91e780dd
+[0m15:45:49.673530 [debug] [Thread-1  ]: Snowflake adapter: Snowflake error: 000606 (57P03): No active warehouse selected in the current session.  Select an active warehouse with the 'use warehouse' command.
+
+[0m15:45:49.673530 [debug] [Thread-1  ]: Timing info for seed.shopco_analytics.raw_web_events (execute): 15:45:47.125284 => 15:45:49.673530
+[0m15:45:49.674529 [debug] [Thread-1  ]: On seed.shopco_analytics.raw_web_events: Close
+[0m15:45:49.776547 [debug] [Thread-1  ]: Database Error in seed raw_web_events (seeds\raw_web_events.csv)
+  000606 (57P03): No active warehouse selected in the current session.  Select an active warehouse with the 'use warehouse' command.
+  
+[0m15:45:49.777547 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ad8a6077-9f56-42fe-a0c9-f072ab08274e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017261A80160>]}
+[0m15:45:49.777547 [error] [Thread-1  ]: 5 of 5 ERROR loading seed file DEV_xdai_shopco_production.raw_web_events ....... [[31mERROR[0m in 2.65s]
+[0m15:45:49.778547 [debug] [Thread-1  ]: Finished running node seed.shopco_analytics.raw_web_events
+[0m15:45:49.779547 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:45:49.780547 [debug] [MainThread]: Connection 'create_raw_data_DEV_xdai_shopco_production' was properly closed.
+[0m15:45:49.780547 [debug] [MainThread]: Connection 'list_ANALYTICS_DEV_xdai_marts' was properly closed.
+[0m15:45:49.780547 [debug] [MainThread]: Connection 'list_ANALYTICS_DEV_xdai_staging' was properly closed.
+[0m15:45:49.781548 [debug] [MainThread]: Connection 'list_raw_data_DEV_xdai_shopco_production' was properly closed.
+[0m15:45:49.781548 [debug] [MainThread]: Connection 'list_ANALYTICS_snapshots' was properly closed.
+[0m15:45:49.781548 [debug] [MainThread]: Connection 'seed.shopco_analytics.raw_web_events' was properly closed.
+[0m15:45:49.781548 [debug] [MainThread]: Connection 'seed.shopco_analytics.raw_order_items' was properly closed.
+[0m15:45:49.782547 [debug] [MainThread]: Connection 'seed.shopco_analytics.raw_orders' was properly closed.
+[0m15:45:49.782547 [debug] [MainThread]: Connection 'seed.shopco_analytics.raw_products' was properly closed.
+[0m15:45:49.782547 [info ] [MainThread]: 
+[0m15:45:49.783547 [info ] [MainThread]: Finished running 5 seeds in 0 hours 0 minutes and 8.00 seconds (8.00s).
+[0m15:45:49.784545 [debug] [MainThread]: Command end result
+[0m15:45:49.797545 [info ] [MainThread]: 
+[0m15:45:49.797545 [info ] [MainThread]: [31mCompleted with 5 errors and 0 warnings:[0m
+[0m15:45:49.798545 [info ] [MainThread]: 
+[0m15:45:49.798545 [error] [MainThread]:   Database Error in seed raw_customers (seeds\raw_customers.csv)
+  000606 (57P03): No active warehouse selected in the current session.  Select an active warehouse with the 'use warehouse' command.
+  
+[0m15:45:49.799547 [info ] [MainThread]: 
+[0m15:45:49.799547 [error] [MainThread]:   Database Error in seed raw_products (seeds\raw_products.csv)
+  000606 (57P03): No active warehouse selected in the current session.  Select an active warehouse with the 'use warehouse' command.
+  
+[0m15:45:49.799547 [info ] [MainThread]: 
+[0m15:45:49.800545 [error] [MainThread]:   Database Error in seed raw_orders (seeds\raw_orders.csv)
+  000606 (57P03): No active warehouse selected in the current session.  Select an active warehouse with the 'use warehouse' command.
+  
+[0m15:45:49.800545 [info ] [MainThread]: 
+[0m15:45:49.800545 [error] [MainThread]:   Database Error in seed raw_order_items (seeds\raw_order_items.csv)
+  000606 (57P03): No active warehouse selected in the current session.  Select an active warehouse with the 'use warehouse' command.
+  
+[0m15:45:49.801544 [info ] [MainThread]: 
+[0m15:45:49.801544 [error] [MainThread]:   Database Error in seed raw_web_events (seeds\raw_web_events.csv)
+  000606 (57P03): No active warehouse selected in the current session.  Select an active warehouse with the 'use warehouse' command.
+  
+[0m15:45:49.801544 [info ] [MainThread]: 
+[0m15:45:49.802545 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=5 SKIP=0 TOTAL=5
+[0m15:45:49.803545 [debug] [MainThread]: Command `dbt seed` failed at 15:45:49.802545 after 8.75 seconds
+[0m15:45:49.803545 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001725D21AC10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000172609888E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017261A7BE50>]}
+[0m15:45:49.803545 [debug] [MainThread]: Flushing usage events
+[0m16:27:04.009747 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BE4E5BBB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BE77A29A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BE77A26A0>]}
+
+
+============================== 16:27:04.023479 | 745350b5-a8ea-41ba-a453-81593d7bf527 ==============================
+[0m16:27:04.023479 [info ] [MainThread]: Running with dbt=1.7.18
+[0m16:27:04.023479 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\Xuan\\shopco_analytics\\logs', 'profiles_dir': 'C:\\Users\\Xuan\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt seed', 'send_anonymous_usage_stats': 'True'}
+[0m16:27:04.830847 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '745350b5-a8ea-41ba-a453-81593d7bf527', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BE77A29A0>]}
+[0m16:27:04.914847 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '745350b5-a8ea-41ba-a453-81593d7bf527', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BE80742E0>]}
+[0m16:27:04.915848 [info ] [MainThread]: Registered adapter: snowflake=1.7.0
+[0m16:27:04.924848 [debug] [MainThread]: checksum: 7ef98830ab3f0215d011ffa635e2417c6313d5b77f40f33d534bad4eb8784f08, vars: {}, profile: , target: , version: 1.7.18
+[0m16:27:05.123167 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:27:05.123167 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:27:05.131167 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '745350b5-a8ea-41ba-a453-81593d7bf527', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BE839F460>]}
+[0m16:27:05.153589 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '745350b5-a8ea-41ba-a453-81593d7bf527', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BE82072B0>]}
+[0m16:27:05.154589 [info ] [MainThread]: Found 15 models, 1 snapshot, 4 analyses, 5 seeds, 56 tests, 5 sources, 0 exposures, 0 metrics, 430 macros, 0 groups, 0 semantic models
+[0m16:27:05.154589 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '745350b5-a8ea-41ba-a453-81593d7bf527', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BE8207970>]}
+[0m16:27:05.157589 [info ] [MainThread]: 
+[0m16:27:05.158589 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:27:05.159589 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_raw_data'
+[0m16:27:05.172590 [debug] [ThreadPool]: Using snowflake connection "list_raw_data"
+[0m16:27:05.172590 [debug] [ThreadPool]: On list_raw_data: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "connection_name": "list_raw_data"} */
+show terse schemas in database raw_data
+    limit 10000
+[0m16:27:05.172590 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:27:06.609606 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 1.0 seconds
+[0m16:27:06.611605 [debug] [ThreadPool]: On list_raw_data: Close
+[0m16:27:06.722881 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_raw_data, now create_raw_data_DEV_xdai_shopco_production)
+[0m16:27:06.723881 [debug] [ThreadPool]: Creating schema "database: "raw_data"
+schema: "DEV_xdai_shopco_production"
+"
+[0m16:27:06.728882 [debug] [ThreadPool]: Using snowflake connection "create_raw_data_DEV_xdai_shopco_production"
+[0m16:27:06.728882 [debug] [ThreadPool]: On create_raw_data_DEV_xdai_shopco_production: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "connection_name": "create_raw_data_DEV_xdai_shopco_production"} */
+create schema if not exists raw_data.DEV_xdai_shopco_production
+[0m16:27:06.729880 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:27:08.118761 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:27:08.119768 [debug] [ThreadPool]: On create_raw_data_DEV_xdai_shopco_production: Close
+[0m16:27:08.255282 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS_DEV_xdai_marts'
+[0m16:27:08.256281 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS_DEV_xdai_staging'
+[0m16:27:08.263282 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS_DEV_xdai_marts"
+[0m16:27:08.264282 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_raw_data_DEV_xdai_shopco_production'
+[0m16:27:08.266282 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS_DEV_xdai_staging"
+[0m16:27:08.266282 [debug] [ThreadPool]: On list_ANALYTICS_DEV_xdai_marts: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "connection_name": "list_ANALYTICS_DEV_xdai_marts"} */
+show terse objects in ANALYTICS.DEV_xdai_marts limit 10000
+[0m16:27:08.267282 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS_snapshots'
+[0m16:27:08.269282 [debug] [ThreadPool]: Using snowflake connection "list_raw_data_DEV_xdai_shopco_production"
+[0m16:27:08.269282 [debug] [ThreadPool]: On list_ANALYTICS_DEV_xdai_staging: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "connection_name": "list_ANALYTICS_DEV_xdai_staging"} */
+show terse objects in ANALYTICS.DEV_xdai_staging limit 10000
+[0m16:27:08.270281 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:27:08.272281 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS_snapshots"
+[0m16:27:08.273281 [debug] [ThreadPool]: On list_raw_data_DEV_xdai_shopco_production: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "connection_name": "list_raw_data_DEV_xdai_shopco_production"} */
+show terse objects in raw_data.DEV_xdai_shopco_production limit 10000
+[0m16:27:08.273281 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:27:08.273281 [debug] [ThreadPool]: On list_ANALYTICS_snapshots: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "connection_name": "list_ANALYTICS_snapshots"} */
+show terse objects in ANALYTICS.snapshots limit 10000
+[0m16:27:08.274282 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:27:08.275282 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:27:08.636463 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m16:27:08.637463 [debug] [ThreadPool]: On list_raw_data_DEV_xdai_shopco_production: Close
+[0m16:27:08.649470 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01c3ee68-0001-6d81-0000-001b91e75169
+[0m16:27:08.649470 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+[0m16:27:08.650470 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_relations_without_caching
+[0m16:27:08.650470 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m16:27:08.650470 [debug] [ThreadPool]: On list_ANALYTICS_snapshots: Close
+[0m16:27:09.293993 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01c3ee68-0001-6b87-0000-001b91e761e9
+[0m16:27:09.293993 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+[0m16:27:09.294993 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_relations_without_caching
+[0m16:27:09.294993 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m16:27:09.294993 [debug] [ThreadPool]: On list_ANALYTICS_DEV_xdai_marts: Close
+[0m16:27:09.389833 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01c3ee68-0001-6d7e-0000-001b91e7813d
+[0m16:27:09.390838 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+[0m16:27:09.390838 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_relations_without_caching
+[0m16:27:09.390838 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m16:27:09.391838 [debug] [ThreadPool]: On list_ANALYTICS_DEV_xdai_staging: Close
+[0m16:27:09.553946 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '745350b5-a8ea-41ba-a453-81593d7bf527', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BE85732B0>]}
+[0m16:27:09.553946 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m16:27:09.554947 [info ] [MainThread]: 
+[0m16:27:09.559438 [debug] [Thread-1  ]: Began running node seed.shopco_analytics.raw_customers
+[0m16:27:09.560438 [debug] [Thread-2  ]: Began running node seed.shopco_analytics.raw_order_items
+[0m16:27:09.560438 [debug] [Thread-3  ]: Began running node seed.shopco_analytics.raw_orders
+[0m16:27:09.561438 [debug] [Thread-4  ]: Began running node seed.shopco_analytics.raw_products
+[0m16:27:09.561438 [info ] [Thread-1  ]: 1 of 5 START seed file raw_data.DEV_xdai_shopco_production.raw_customers ....... [RUN]
+[0m16:27:09.562439 [info ] [Thread-2  ]: 2 of 5 START seed file raw_data.DEV_xdai_shopco_production.raw_order_items ..... [RUN]
+[0m16:27:09.562439 [info ] [Thread-3  ]: 3 of 5 START seed file raw_data.DEV_xdai_shopco_production.raw_orders .......... [RUN]
+[0m16:27:09.562439 [info ] [Thread-4  ]: 4 of 5 START seed file raw_data.DEV_xdai_shopco_production.raw_products ........ [RUN]
+[0m16:27:09.563439 [debug] [Thread-1  ]: Acquiring new snowflake connection 'seed.shopco_analytics.raw_customers'
+[0m16:27:09.564439 [debug] [Thread-2  ]: Acquiring new snowflake connection 'seed.shopco_analytics.raw_order_items'
+[0m16:27:09.564439 [debug] [Thread-3  ]: Acquiring new snowflake connection 'seed.shopco_analytics.raw_orders'
+[0m16:27:09.565439 [debug] [Thread-1  ]: Began compiling node seed.shopco_analytics.raw_customers
+[0m16:27:09.566439 [debug] [Thread-2  ]: Began compiling node seed.shopco_analytics.raw_order_items
+[0m16:27:09.566439 [debug] [Thread-4  ]: Acquiring new snowflake connection 'seed.shopco_analytics.raw_products'
+[0m16:27:09.567438 [debug] [Thread-3  ]: Began compiling node seed.shopco_analytics.raw_orders
+[0m16:27:09.567438 [debug] [Thread-1  ]: Timing info for seed.shopco_analytics.raw_customers (compile): 16:27:09.567438 => 16:27:09.567438
+[0m16:27:09.568441 [debug] [Thread-2  ]: Timing info for seed.shopco_analytics.raw_order_items (compile): 16:27:09.568441 => 16:27:09.568441
+[0m16:27:09.568441 [debug] [Thread-4  ]: Began compiling node seed.shopco_analytics.raw_products
+[0m16:27:09.569439 [debug] [Thread-3  ]: Timing info for seed.shopco_analytics.raw_orders (compile): 16:27:09.568441 => 16:27:09.568441
+[0m16:27:09.569439 [debug] [Thread-1  ]: Began executing node seed.shopco_analytics.raw_customers
+[0m16:27:09.569439 [debug] [Thread-2  ]: Began executing node seed.shopco_analytics.raw_order_items
+[0m16:27:09.570438 [debug] [Thread-4  ]: Timing info for seed.shopco_analytics.raw_products (compile): 16:27:09.570438 => 16:27:09.570438
+[0m16:27:09.570438 [debug] [Thread-3  ]: Began executing node seed.shopco_analytics.raw_orders
+[0m16:27:09.594441 [debug] [Thread-4  ]: Began executing node seed.shopco_analytics.raw_products
+[0m16:27:09.622439 [debug] [Thread-1  ]: Using snowflake connection "seed.shopco_analytics.raw_customers"
+[0m16:27:09.625440 [debug] [Thread-1  ]: On seed.shopco_analytics.raw_customers: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "node_id": "seed.shopco_analytics.raw_customers"} */
+create table raw_data.DEV_xdai_shopco_production.raw_customers (customer_id text,email text,first_name text,last_name text,country text,customer_tier text,created_at timestamp without time zone)
+[0m16:27:09.626441 [debug] [Thread-4  ]: Using snowflake connection "seed.shopco_analytics.raw_products"
+[0m16:27:09.627441 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+[0m16:27:09.629440 [debug] [Thread-4  ]: On seed.shopco_analytics.raw_products: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "node_id": "seed.shopco_analytics.raw_products"} */
+create table raw_data.DEV_xdai_shopco_production.raw_products (product_id text,product_name text,category text,subcategory text,brand text,current_price float8,cost float8)
+[0m16:27:09.631440 [debug] [Thread-4  ]: Opening a new connection, currently in state init
+[0m16:27:09.688438 [debug] [Thread-3  ]: Using snowflake connection "seed.shopco_analytics.raw_orders"
+[0m16:27:09.728438 [debug] [Thread-3  ]: On seed.shopco_analytics.raw_orders: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "node_id": "seed.shopco_analytics.raw_orders"} */
+create table raw_data.DEV_xdai_shopco_production.raw_orders (order_id text,customer_id text,order_date timestamp without time zone,order_status text,total_amount float8,payment_method text)
+[0m16:27:09.756438 [debug] [Thread-3  ]: Opening a new connection, currently in state init
+[0m16:27:09.772438 [debug] [Thread-2  ]: Using snowflake connection "seed.shopco_analytics.raw_order_items"
+[0m16:27:09.773439 [debug] [Thread-2  ]: On seed.shopco_analytics.raw_order_items: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "node_id": "seed.shopco_analytics.raw_order_items"} */
+create table raw_data.DEV_xdai_shopco_production.raw_order_items (order_item_id text,order_id text,product_id text,quantity integer,unit_price float8)
+[0m16:27:09.774439 [debug] [Thread-2  ]: Opening a new connection, currently in state init
+[0m16:27:10.230922 [debug] [Thread-3  ]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:27:10.280921 [debug] [Thread-3  ]: Using snowflake connection "seed.shopco_analytics.raw_orders"
+[0m16:27:10.281922 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:27:10.281922 [debug] [Thread-3  ]: On seed.shopco_analytics.raw_orders: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "node_id": "seed.shopco_analytics.raw_orders"} */
+BEGIN
+[0m16:27:10.293921 [debug] [Thread-1  ]: Using snowflake connection "seed.shopco_analytics.raw_customers"
+[0m16:27:10.294921 [debug] [Thread-4  ]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:27:10.294921 [debug] [Thread-2  ]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:27:10.295922 [debug] [Thread-1  ]: On seed.shopco_analytics.raw_customers: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "node_id": "seed.shopco_analytics.raw_customers"} */
+BEGIN
+[0m16:27:10.298921 [debug] [Thread-4  ]: Using snowflake connection "seed.shopco_analytics.raw_products"
+[0m16:27:10.380921 [debug] [Thread-2  ]: Using snowflake connection "seed.shopco_analytics.raw_order_items"
+[0m16:27:10.381920 [debug] [Thread-4  ]: On seed.shopco_analytics.raw_products: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "node_id": "seed.shopco_analytics.raw_products"} */
+BEGIN
+[0m16:27:10.382921 [debug] [Thread-2  ]: On seed.shopco_analytics.raw_order_items: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "node_id": "seed.shopco_analytics.raw_order_items"} */
+BEGIN
+[0m16:27:10.490934 [debug] [Thread-4  ]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:27:10.496931 [debug] [Thread-4  ]: Using snowflake connection "seed.shopco_analytics.raw_products"
+[0m16:27:10.497933 [debug] [Thread-2  ]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:27:10.497933 [debug] [Thread-4  ]: On seed.shopco_analytics.raw_products: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "node_id": "seed.shopco_analytics.raw_products"} */
+insert into raw_data.DEV_xdai_shopco_production.raw_products (product_id, product_name, category, subcategory, brand, current_price, cost) values
+            (%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,...
+[0m16:27:10.593457 [debug] [Thread-3  ]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:27:10.626458 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:27:10.882003 [debug] [Thread-1  ]: Using snowflake connection "seed.shopco_analytics.raw_customers"
+[0m16:27:10.897004 [debug] [Thread-3  ]: Using snowflake connection "seed.shopco_analytics.raw_orders"
+[0m16:27:10.927003 [debug] [Thread-1  ]: On seed.shopco_analytics.raw_customers: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "node_id": "seed.shopco_analytics.raw_customers"} */
+insert into raw_data.DEV_xdai_shopco_production.raw_customers (customer_id, email, first_name, last_name, country, customer_tier, created_at) values
+            (%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),...
+[0m16:27:10.935003 [debug] [Thread-2  ]: Using snowflake connection "seed.shopco_analytics.raw_order_items"
+[0m16:27:10.936004 [debug] [Thread-3  ]: On seed.shopco_analytics.raw_orders: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "node_id": "seed.shopco_analytics.raw_orders"} */
+insert into raw_data.DEV_xdai_shopco_production.raw_orders (order_id, customer_id, order_date, order_status, total_amount, payment_method) values
+            (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,...
+[0m16:27:10.943004 [debug] [Thread-2  ]: On seed.shopco_analytics.raw_order_items: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "node_id": "seed.shopco_analytics.raw_order_items"} */
+insert into raw_data.DEV_xdai_shopco_production.raw_order_items (order_item_id, order_id, product_id, quantity, unit_price) values
+            (%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%...
+[0m16:27:11.702019 [debug] [Thread-4  ]: SQL status: SUCCESS 88 in 1.0 seconds
+[0m16:27:11.703019 [debug] [Thread-4  ]: Using snowflake connection "seed.shopco_analytics.raw_products"
+[0m16:27:11.704019 [debug] [Thread-1  ]: SQL status: SUCCESS 500 in 1.0 seconds
+[0m16:27:11.705019 [debug] [Thread-4  ]: On seed.shopco_analytics.raw_products: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "node_id": "seed.shopco_analytics.raw_products"} */
+COMMIT
+[0m16:27:11.705019 [debug] [Thread-1  ]: Using snowflake connection "seed.shopco_analytics.raw_customers"
+[0m16:27:11.706019 [debug] [Thread-1  ]: On seed.shopco_analytics.raw_customers: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "node_id": "seed.shopco_analytics.raw_customers"} */
+COMMIT
+[0m16:27:11.963290 [debug] [Thread-3  ]: SQL status: SUCCESS 2000 in 1.0 seconds
+[0m16:27:11.964291 [debug] [Thread-3  ]: Using snowflake connection "seed.shopco_analytics.raw_orders"
+[0m16:27:11.964291 [debug] [Thread-3  ]: On seed.shopco_analytics.raw_orders: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "node_id": "seed.shopco_analytics.raw_orders"} */
+COMMIT
+[0m16:27:11.965292 [debug] [Thread-4  ]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:27:11.972293 [debug] [Thread-4  ]: Writing runtime SQL for node "seed.shopco_analytics.raw_products"
+[0m16:27:11.994292 [debug] [Thread-4  ]: Timing info for seed.shopco_analytics.raw_products (execute): 16:27:09.597440 => 16:27:11.994292
+[0m16:27:11.995293 [debug] [Thread-4  ]: On seed.shopco_analytics.raw_products: Close
+[0m16:27:11.998290 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:27:11.999293 [debug] [Thread-1  ]: Writing runtime SQL for node "seed.shopco_analytics.raw_customers"
+[0m16:27:12.002290 [debug] [Thread-1  ]: Timing info for seed.shopco_analytics.raw_customers (execute): 16:27:09.571441 => 16:27:12.001292
+[0m16:27:12.002290 [debug] [Thread-1  ]: On seed.shopco_analytics.raw_customers: Close
+[0m16:27:12.113851 [debug] [Thread-4  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '745350b5-a8ea-41ba-a453-81593d7bf527', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BE95EA310>]}
+[0m16:27:12.114851 [info ] [Thread-4  ]: 4 of 5 OK loaded seed file DEV_xdai_shopco_production.raw_products ............. [[32mINSERT 88[0m in 2.55s]
+[0m16:27:12.115852 [debug] [Thread-4  ]: Finished running node seed.shopco_analytics.raw_products
+[0m16:27:12.116850 [debug] [Thread-4  ]: Began running node seed.shopco_analytics.raw_web_events
+[0m16:27:12.117850 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '745350b5-a8ea-41ba-a453-81593d7bf527', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BE96BD730>]}
+[0m16:27:12.116850 [info ] [Thread-4  ]: 5 of 5 START seed file raw_data.DEV_xdai_shopco_production.raw_web_events ...... [RUN]
+[0m16:27:12.117850 [info ] [Thread-1  ]: 1 of 5 OK loaded seed file DEV_xdai_shopco_production.raw_customers ............ [[32mINSERT 500[0m in 2.55s]
+[0m16:27:12.118851 [debug] [Thread-4  ]: Re-using an available connection from the pool (formerly seed.shopco_analytics.raw_products, now seed.shopco_analytics.raw_web_events)
+[0m16:27:12.119854 [debug] [Thread-1  ]: Finished running node seed.shopco_analytics.raw_customers
+[0m16:27:12.119854 [debug] [Thread-4  ]: Began compiling node seed.shopco_analytics.raw_web_events
+[0m16:27:12.120851 [debug] [Thread-4  ]: Timing info for seed.shopco_analytics.raw_web_events (compile): 16:27:12.119854 => 16:27:12.119854
+[0m16:27:12.120851 [debug] [Thread-4  ]: Began executing node seed.shopco_analytics.raw_web_events
+[0m16:27:12.190854 [debug] [Thread-4  ]: Using snowflake connection "seed.shopco_analytics.raw_web_events"
+[0m16:27:12.190854 [debug] [Thread-4  ]: On seed.shopco_analytics.raw_web_events: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "node_id": "seed.shopco_analytics.raw_web_events"} */
+create table raw_data.DEV_xdai_shopco_production.raw_web_events (event_id text,session_id text,customer_id text,event_type text,page_url text,event_timestamp timestamp without time zone,product_id text)
+[0m16:27:12.191854 [debug] [Thread-4  ]: Opening a new connection, currently in state closed
+[0m16:27:12.314951 [debug] [Thread-3  ]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:27:12.315951 [debug] [Thread-3  ]: Writing runtime SQL for node "seed.shopco_analytics.raw_orders"
+[0m16:27:12.318539 [debug] [Thread-3  ]: Timing info for seed.shopco_analytics.raw_orders (execute): 16:27:09.594441 => 16:27:12.318539
+[0m16:27:12.318539 [debug] [Thread-3  ]: On seed.shopco_analytics.raw_orders: Close
+[0m16:27:12.423262 [debug] [Thread-3  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '745350b5-a8ea-41ba-a453-81593d7bf527', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BE95E0AC0>]}
+[0m16:27:12.424261 [info ] [Thread-3  ]: 3 of 5 OK loaded seed file DEV_xdai_shopco_production.raw_orders ............... [[32mINSERT 2000[0m in 2.86s]
+[0m16:27:12.424261 [debug] [Thread-3  ]: Finished running node seed.shopco_analytics.raw_orders
+[0m16:27:12.593335 [debug] [Thread-4  ]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:27:12.652335 [debug] [Thread-4  ]: Using snowflake connection "seed.shopco_analytics.raw_web_events"
+[0m16:27:12.653336 [debug] [Thread-4  ]: On seed.shopco_analytics.raw_web_events: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "node_id": "seed.shopco_analytics.raw_web_events"} */
+BEGIN
+[0m16:27:12.778992 [debug] [Thread-4  ]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:27:13.019531 [debug] [Thread-4  ]: Using snowflake connection "seed.shopco_analytics.raw_web_events"
+[0m16:27:13.019531 [debug] [Thread-4  ]: On seed.shopco_analytics.raw_web_events: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "node_id": "seed.shopco_analytics.raw_web_events"} */
+insert into raw_data.DEV_xdai_shopco_production.raw_web_events (event_id, session_id, customer_id, event_type, page_url, event_timestamp, product_id) values
+            (%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%...
+[0m16:27:13.061531 [debug] [Thread-2  ]: SQL status: SUCCESS 5069 in 2.0 seconds
+[0m16:27:13.062531 [debug] [Thread-2  ]: Using snowflake connection "seed.shopco_analytics.raw_order_items"
+[0m16:27:13.062531 [debug] [Thread-2  ]: On seed.shopco_analytics.raw_order_items: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "node_id": "seed.shopco_analytics.raw_order_items"} */
+COMMIT
+[0m16:27:13.378195 [debug] [Thread-2  ]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:27:13.379199 [debug] [Thread-2  ]: Writing runtime SQL for node "seed.shopco_analytics.raw_order_items"
+[0m16:27:13.382198 [debug] [Thread-2  ]: Timing info for seed.shopco_analytics.raw_order_items (execute): 16:27:09.590439 => 16:27:13.382198
+[0m16:27:13.383199 [debug] [Thread-2  ]: On seed.shopco_analytics.raw_order_items: Close
+[0m16:27:13.478298 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '745350b5-a8ea-41ba-a453-81593d7bf527', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BE96DDD90>]}
+[0m16:27:13.479299 [info ] [Thread-2  ]: 2 of 5 OK loaded seed file DEV_xdai_shopco_production.raw_order_items .......... [[32mINSERT 5069[0m in 3.91s]
+[0m16:27:13.480301 [debug] [Thread-2  ]: Finished running node seed.shopco_analytics.raw_order_items
+[0m16:27:14.958819 [debug] [Thread-4  ]: SQL status: SUCCESS 3000 in 2.0 seconds
+[0m16:27:14.959816 [debug] [Thread-4  ]: Using snowflake connection "seed.shopco_analytics.raw_web_events"
+[0m16:27:14.960818 [debug] [Thread-4  ]: On seed.shopco_analytics.raw_web_events: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "node_id": "seed.shopco_analytics.raw_web_events"} */
+COMMIT
+[0m16:27:15.244114 [debug] [Thread-4  ]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m16:27:15.245113 [debug] [Thread-4  ]: Writing runtime SQL for node "seed.shopco_analytics.raw_web_events"
+[0m16:27:15.248114 [debug] [Thread-4  ]: Timing info for seed.shopco_analytics.raw_web_events (execute): 16:27:12.120851 => 16:27:15.248114
+[0m16:27:15.248114 [debug] [Thread-4  ]: On seed.shopco_analytics.raw_web_events: Close
+[0m16:27:15.350538 [debug] [Thread-4  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '745350b5-a8ea-41ba-a453-81593d7bf527', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BE9C866D0>]}
+[0m16:27:15.351538 [info ] [Thread-4  ]: 5 of 5 OK loaded seed file DEV_xdai_shopco_production.raw_web_events ........... [[32mINSERT 3000[0m in 3.23s]
+[0m16:27:15.352535 [debug] [Thread-4  ]: Finished running node seed.shopco_analytics.raw_web_events
+[0m16:27:15.353534 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:27:15.353534 [debug] [MainThread]: Connection 'create_raw_data_DEV_xdai_shopco_production' was properly closed.
+[0m16:27:15.354535 [debug] [MainThread]: Connection 'list_ANALYTICS_DEV_xdai_marts' was properly closed.
+[0m16:27:15.354535 [debug] [MainThread]: Connection 'list_ANALYTICS_DEV_xdai_staging' was properly closed.
+[0m16:27:15.354535 [debug] [MainThread]: Connection 'list_raw_data_DEV_xdai_shopco_production' was properly closed.
+[0m16:27:15.355535 [debug] [MainThread]: Connection 'list_ANALYTICS_snapshots' was properly closed.
+[0m16:27:15.355535 [debug] [MainThread]: Connection 'seed.shopco_analytics.raw_customers' was properly closed.
+[0m16:27:15.355535 [debug] [MainThread]: Connection 'seed.shopco_analytics.raw_order_items' was properly closed.
+[0m16:27:15.355535 [debug] [MainThread]: Connection 'seed.shopco_analytics.raw_orders' was properly closed.
+[0m16:27:15.356535 [debug] [MainThread]: Connection 'seed.shopco_analytics.raw_web_events' was properly closed.
+[0m16:27:15.356535 [info ] [MainThread]: 
+[0m16:27:15.356535 [info ] [MainThread]: Finished running 5 seeds in 0 hours 0 minutes and 10.20 seconds (10.20s).
+[0m16:27:15.358534 [debug] [MainThread]: Command end result
+[0m16:27:15.370534 [info ] [MainThread]: 
+[0m16:27:15.371537 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:27:15.372534 [info ] [MainThread]: 
+[0m16:27:15.372534 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
+[0m16:27:15.373534 [debug] [MainThread]: Command `dbt seed` succeeded at 16:27:15.373534 after 11.42 seconds
+[0m16:27:15.373534 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BE4E5BBB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BE8573BB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BE7FD0220>]}
+[0m16:27:15.374535 [debug] [MainThread]: Flushing usage events
+[0m16:44:53.707114 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019EF80B8BB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019EFAA1C580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019EFAA1CEB0>]}
+
+
+============================== 16:44:53.710114 | 0a5cb000-f28d-4e07-b3c7-ef667192e0bd ==============================
+[0m16:44:53.710114 [info ] [MainThread]: Running with dbt=1.7.18
+[0m16:44:53.710114 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\Xuan\\shopco_analytics\\logs', 'profiles_dir': 'C:\\Users\\Xuan\\.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt run -s staging', 'send_anonymous_usage_stats': 'True'}
+[0m16:44:54.128595 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0a5cb000-f28d-4e07-b3c7-ef667192e0bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019EF78FC220>]}
+[0m16:44:54.206116 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0a5cb000-f28d-4e07-b3c7-ef667192e0bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019EFB220FA0>]}
+[0m16:44:54.207116 [info ] [MainThread]: Registered adapter: snowflake=1.7.0
+[0m16:44:54.215115 [debug] [MainThread]: checksum: 7ef98830ab3f0215d011ffa635e2417c6313d5b77f40f33d534bad4eb8784f08, vars: {}, profile: , target: , version: 1.7.18
+[0m16:44:54.341116 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:44:54.342117 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:44:54.349117 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0a5cb000-f28d-4e07-b3c7-ef667192e0bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019EFB612490>]}
+[0m16:44:54.365117 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0a5cb000-f28d-4e07-b3c7-ef667192e0bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019EFB47A2B0>]}
+[0m16:44:54.365117 [info ] [MainThread]: Found 15 models, 1 snapshot, 4 analyses, 5 seeds, 56 tests, 5 sources, 0 exposures, 0 metrics, 430 macros, 0 groups, 0 semantic models
+[0m16:44:54.365117 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0a5cb000-f28d-4e07-b3c7-ef667192e0bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019EFB47A9A0>]}
+[0m16:44:54.368116 [info ] [MainThread]: 
+[0m16:44:54.368116 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:44:54.370115 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS'
+[0m16:44:54.382115 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS"
+[0m16:44:54.382115 [debug] [ThreadPool]: On list_ANALYTICS: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "connection_name": "list_ANALYTICS"} */
+show terse schemas in database ANALYTICS
+    limit 10000
+[0m16:44:54.382115 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:44:55.721357 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01c3ee7c-0001-6d7e-0000-001b91e78265
+[0m16:44:55.721357 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+[0m16:44:55.722357 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_schemas
+[0m16:44:55.722357 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m16:44:55.722357 [debug] [ThreadPool]: On list_ANALYTICS: Close
+[0m16:44:55.838137 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:44:55.839137 [debug] [MainThread]: Connection 'list_ANALYTICS' was properly closed.
+[0m16:44:55.839137 [info ] [MainThread]: 
+[0m16:44:55.840137 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 1.47 seconds (1.47s).
+[0m16:44:55.840137 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Database error while listing schemas in database "ANALYTICS"
+  Database Error
+    002043 (02000): SQL compilation error:
+    Object does not exist, or operation cannot be performed.
+[0m16:44:55.841137 [debug] [MainThread]: Command `dbt run` failed at 16:44:55.841137 after 2.19 seconds
+[0m16:44:55.841137 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019EF80B8BB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019EFB61E580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019EFB47AA30>]}
+[0m16:44:55.842137 [debug] [MainThread]: Flushing usage events
+[0m16:46:46.920584 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A9E4D10D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A9E766F640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A9E766FFA0>]}
+
+
+============================== 16:46:46.922584 | 8c7d8ee0-9e5f-40ef-8053-1d6b67230ea2 ==============================
+[0m16:46:46.922584 [info ] [MainThread]: Running with dbt=1.7.18
+[0m16:46:46.923585 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\Xuan\\shopco_analytics\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Xuan\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run -s staging', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:46:47.343584 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8c7d8ee0-9e5f-40ef-8053-1d6b67230ea2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A9E764EFD0>]}
+[0m16:46:47.421584 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8c7d8ee0-9e5f-40ef-8053-1d6b67230ea2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A9E7EF8220>]}
+[0m16:46:47.422584 [info ] [MainThread]: Registered adapter: snowflake=1.7.0
+[0m16:46:47.430585 [debug] [MainThread]: checksum: 7ef98830ab3f0215d011ffa635e2417c6313d5b77f40f33d534bad4eb8784f08, vars: {}, profile: , target: , version: 1.7.18
+[0m16:46:47.559585 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:46:47.560586 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:46:47.567584 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8c7d8ee0-9e5f-40ef-8053-1d6b67230ea2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A9E8262550>]}
+[0m16:46:47.584585 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8c7d8ee0-9e5f-40ef-8053-1d6b67230ea2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A9E80CB370>]}
+[0m16:46:47.585584 [info ] [MainThread]: Found 15 models, 1 snapshot, 4 analyses, 5 seeds, 56 tests, 5 sources, 0 exposures, 0 metrics, 430 macros, 0 groups, 0 semantic models
+[0m16:46:47.585584 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8c7d8ee0-9e5f-40ef-8053-1d6b67230ea2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A9E80CBA60>]}
+[0m16:46:47.587588 [info ] [MainThread]: 
+[0m16:46:47.588584 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:46:47.590585 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS'
+[0m16:46:47.602586 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS"
+[0m16:46:47.603584 [debug] [ThreadPool]: On list_ANALYTICS: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "connection_name": "list_ANALYTICS"} */
+show terse schemas in database ANALYTICS
+    limit 10000
+[0m16:46:47.603584 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:46:49.445217 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 2.0 seconds
+[0m16:46:49.447217 [debug] [ThreadPool]: On list_ANALYTICS: Close
+[0m16:46:49.549571 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ANALYTICS, now create_ANALYTICS_DEV_xdai_staging)
+[0m16:46:49.550572 [debug] [ThreadPool]: Creating schema "database: "ANALYTICS"
+schema: "DEV_xdai_staging"
+"
+[0m16:46:49.554572 [debug] [ThreadPool]: Using snowflake connection "create_ANALYTICS_DEV_xdai_staging"
+[0m16:46:49.555571 [debug] [ThreadPool]: On create_ANALYTICS_DEV_xdai_staging: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "connection_name": "create_ANALYTICS_DEV_xdai_staging"} */
+create schema if not exists ANALYTICS.DEV_xdai_staging
+[0m16:46:49.555571 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:46:50.573634 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m16:46:50.574633 [debug] [ThreadPool]: On create_ANALYTICS_DEV_xdai_staging: Close
+[0m16:46:50.685566 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_raw_data_DEV_xdai_shopco_production'
+[0m16:46:50.686566 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS_snapshots'
+[0m16:46:50.694568 [debug] [ThreadPool]: Using snowflake connection "list_raw_data_DEV_xdai_shopco_production"
+[0m16:46:50.695565 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS_DEV_xdai_staging'
+[0m16:46:50.697569 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS_snapshots"
+[0m16:46:50.697569 [debug] [ThreadPool]: On list_raw_data_DEV_xdai_shopco_production: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "connection_name": "list_raw_data_DEV_xdai_shopco_production"} */
+show terse objects in raw_data.DEV_xdai_shopco_production limit 10000
+[0m16:46:50.698566 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS_DEV_xdai_marts'
+[0m16:46:50.700565 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS_DEV_xdai_staging"
+[0m16:46:50.700565 [debug] [ThreadPool]: On list_ANALYTICS_snapshots: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "connection_name": "list_ANALYTICS_snapshots"} */
+show terse objects in ANALYTICS.snapshots limit 10000
+[0m16:46:50.701566 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:46:50.703566 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS_DEV_xdai_marts"
+[0m16:46:50.704565 [debug] [ThreadPool]: On list_ANALYTICS_DEV_xdai_staging: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "connection_name": "list_ANALYTICS_DEV_xdai_staging"} */
+show terse objects in ANALYTICS.DEV_xdai_staging limit 10000
+[0m16:46:50.704565 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:46:50.705567 [debug] [ThreadPool]: On list_ANALYTICS_DEV_xdai_marts: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "connection_name": "list_ANALYTICS_DEV_xdai_marts"} */
+show terse objects in ANALYTICS.DEV_xdai_marts limit 10000
+[0m16:46:50.705567 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:46:50.706569 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:46:51.064927 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01c3ee7e-0001-6d7e-0000-001b91e782c1
+[0m16:46:51.065928 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+[0m16:46:51.065928 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_relations_without_caching
+[0m16:46:51.066927 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m16:46:51.066927 [debug] [ThreadPool]: On list_ANALYTICS_snapshots: Close
+[0m16:46:51.070926 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01c3ee7e-0001-6e0b-0000-001b91e7b2c1
+[0m16:46:51.070926 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+[0m16:46:51.070926 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_relations_without_caching
+[0m16:46:51.071926 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m16:46:51.071926 [debug] [ThreadPool]: On list_ANALYTICS_DEV_xdai_marts: Close
+[0m16:46:51.145978 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.0 seconds
+[0m16:46:51.147985 [debug] [ThreadPool]: On list_raw_data_DEV_xdai_shopco_production: Close
+[0m16:46:52.215073 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 2.0 seconds
+[0m16:46:52.216073 [debug] [ThreadPool]: On list_ANALYTICS_DEV_xdai_staging: Close
+[0m16:46:52.326795 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8c7d8ee0-9e5f-40ef-8053-1d6b67230ea2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A9E8442880>]}
+[0m16:46:52.327794 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m16:46:52.328795 [info ] [MainThread]: 
+[0m16:46:52.330795 [debug] [Thread-1  ]: Began running node model.shopco_analytics.stg_customers
+[0m16:46:52.330795 [debug] [Thread-2  ]: Began running node model.shopco_analytics.stg_order_items
+[0m16:46:52.331795 [debug] [Thread-3  ]: Began running node model.shopco_analytics.stg_orders
+[0m16:46:52.331795 [debug] [Thread-4  ]: Began running node model.shopco_analytics.stg_products
+[0m16:46:52.332796 [info ] [Thread-1  ]: 1 of 5 START sql view model DEV_xdai_staging.stg_customers ..................... [RUN]
+[0m16:46:52.332796 [info ] [Thread-2  ]: 2 of 5 START sql view model DEV_xdai_staging.stg_order_items ................... [RUN]
+[0m16:46:52.333796 [info ] [Thread-3  ]: 3 of 5 START sql view model DEV_xdai_staging.stg_orders ........................ [RUN]
+[0m16:46:52.333796 [info ] [Thread-4  ]: 4 of 5 START sql view model DEV_xdai_staging.stg_products ...................... [RUN]
+[0m16:46:52.334795 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.shopco_analytics.stg_customers'
+[0m16:46:52.335794 [debug] [Thread-2  ]: Acquiring new snowflake connection 'model.shopco_analytics.stg_order_items'
+[0m16:46:52.336795 [debug] [Thread-4  ]: Acquiring new snowflake connection 'model.shopco_analytics.stg_products'
+[0m16:46:52.336795 [debug] [Thread-1  ]: Began compiling node model.shopco_analytics.stg_customers
+[0m16:46:52.337794 [debug] [Thread-3  ]: Acquiring new snowflake connection 'model.shopco_analytics.stg_orders'
+[0m16:46:52.337794 [debug] [Thread-2  ]: Began compiling node model.shopco_analytics.stg_order_items
+[0m16:46:52.337794 [debug] [Thread-4  ]: Began compiling node model.shopco_analytics.stg_products
+[0m16:46:52.346795 [debug] [Thread-1  ]: Writing injected SQL for node "model.shopco_analytics.stg_customers"
+[0m16:46:52.346795 [debug] [Thread-3  ]: Began compiling node model.shopco_analytics.stg_orders
+[0m16:46:52.349794 [debug] [Thread-2  ]: Writing injected SQL for node "model.shopco_analytics.stg_order_items"
+[0m16:46:52.352794 [debug] [Thread-4  ]: Writing injected SQL for node "model.shopco_analytics.stg_products"
+[0m16:46:52.356795 [debug] [Thread-3  ]: Writing injected SQL for node "model.shopco_analytics.stg_orders"
+[0m16:46:52.358795 [debug] [Thread-4  ]: Timing info for model.shopco_analytics.stg_products (compile): 16:46:52.350796 => 16:46:52.358795
+[0m16:46:52.358795 [debug] [Thread-1  ]: Timing info for model.shopco_analytics.stg_customers (compile): 16:46:52.338795 => 16:46:52.358795
+[0m16:46:52.359796 [debug] [Thread-4  ]: Began executing node model.shopco_analytics.stg_products
+[0m16:46:52.359796 [debug] [Thread-1  ]: Began executing node model.shopco_analytics.stg_customers
+[0m16:46:52.360797 [debug] [Thread-2  ]: Timing info for model.shopco_analytics.stg_order_items (compile): 16:46:52.346795 => 16:46:52.360797
+[0m16:46:52.360797 [debug] [Thread-3  ]: Timing info for model.shopco_analytics.stg_orders (compile): 16:46:52.353796 => 16:46:52.360797
+[0m16:46:52.387795 [debug] [Thread-4  ]: Writing runtime sql for node "model.shopco_analytics.stg_products"
+[0m16:46:52.390795 [debug] [Thread-1  ]: Writing runtime sql for node "model.shopco_analytics.stg_customers"
+[0m16:46:52.390795 [debug] [Thread-2  ]: Began executing node model.shopco_analytics.stg_order_items
+[0m16:46:52.390795 [debug] [Thread-3  ]: Began executing node model.shopco_analytics.stg_orders
+[0m16:46:52.393795 [debug] [Thread-2  ]: Writing runtime sql for node "model.shopco_analytics.stg_order_items"
+[0m16:46:52.396795 [debug] [Thread-3  ]: Writing runtime sql for node "model.shopco_analytics.stg_orders"
+[0m16:46:52.398797 [debug] [Thread-4  ]: Using snowflake connection "model.shopco_analytics.stg_products"
+[0m16:46:52.399795 [debug] [Thread-1  ]: Using snowflake connection "model.shopco_analytics.stg_customers"
+[0m16:46:52.400799 [debug] [Thread-4  ]: On model.shopco_analytics.stg_products: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "node_id": "model.shopco_analytics.stg_products"} */
+create or replace   view ANALYTICS.DEV_xdai_staging.stg_products
+  
+   as (
+    
+
+WITH source AS (
+    SELECT * FROM raw_data.shopco_production.raw_products
+),
+
+cleaned AS (
+    SELECT
+        product_id,
+        TRIM(product_name) AS product_name,
+        LOWER(TRIM(category)) AS category,
+        LOWER(TRIM(subcategory)) AS subcategory,
+        TRIM(brand) AS brand,
+        current_price,
+        cost,
+        current_price - cost AS margin,
+        ROUND((current_price - cost) / NULLIF(current_price, 0) * 100, 2) AS margin_percent,
+        CASE
+            WHEN current_price < 20 THEN 'budget'
+            WHEN current_price BETWEEN 20 AND 100 THEN 'mid_range'
+            WHEN current_price BETWEEN 101 AND 500 THEN 'premium'
+            ELSE 'luxury'
+        END AS price_tier,
+        CURRENT_TIMESTAMP AS dbt_loaded_at
+    FROM source
+    WHERE product_id IS NOT NULL
+      AND current_price > 0
+)
+
+SELECT * FROM cleaned
+  );
+[0m16:46:52.400799 [debug] [Thread-1  ]: On model.shopco_analytics.stg_customers: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "node_id": "model.shopco_analytics.stg_customers"} */
+create or replace   view ANALYTICS.DEV_xdai_staging.stg_customers
+  
+   as (
+    
+
+WITH source AS (
+    SELECT * FROM raw_data.shopco_production.raw_customers
+),
+
+cleaned AS (
+    SELECT
+        customer_id,
+        LOWER(TRIM(email)) AS email,
+        INITCAP(TRIM(first_name)) AS first_name,
+        INITCAP(TRIM(last_name)) AS last_name,
+        INITCAP(TRIM(first_name)) || ' ' || INITCAP(TRIM(last_name)) AS full_name,
+        created_at,
+        UPPER(TRIM(country)) AS country,
+        LOWER(TRIM(customer_tier)) AS customer_tier,
+        CURRENT_TIMESTAMP AS dbt_loaded_at
+    FROM source
+    WHERE customer_id IS NOT NULL
+)
+
+SELECT * FROM cleaned
+  );
+[0m16:46:52.401798 [debug] [Thread-2  ]: Using snowflake connection "model.shopco_analytics.stg_order_items"
+[0m16:46:52.403795 [debug] [Thread-3  ]: Using snowflake connection "model.shopco_analytics.stg_orders"
+[0m16:46:52.403795 [debug] [Thread-4  ]: Opening a new connection, currently in state init
+[0m16:46:52.404794 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+[0m16:46:52.404794 [debug] [Thread-2  ]: On model.shopco_analytics.stg_order_items: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "node_id": "model.shopco_analytics.stg_order_items"} */
+create or replace   view ANALYTICS.DEV_xdai_staging.stg_order_items
+  
+   as (
+    
+
+WITH source AS (
+    SELECT * FROM raw_data.shopco_production.raw_order_items
+),
+
+cleaned AS (
+    SELECT
+        order_item_id,
+        order_id,
+        product_id,
+        quantity,
+        CASE
+            WHEN quantity = 1 THEN 'single'
+            WHEN quantity BETWEEN 2 AND 5 THEN 'small_batch'
+            WHEN quantity BETWEEN 6 AND 20 THEN 'medium_batch'
+            ELSE 'bulk'
+        END AS quantity_tier,
+        unit_price,
+        quantity * unit_price AS line_total,
+        CURRENT_TIMESTAMP AS dbt_loaded_at
+    FROM source
+    WHERE order_item_id IS NOT NULL
+      AND quantity > 0
+      AND unit_price > 0
+)
+
+SELECT * FROM cleaned
+  );
+[0m16:46:52.404794 [debug] [Thread-3  ]: On model.shopco_analytics.stg_orders: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "node_id": "model.shopco_analytics.stg_orders"} */
+create or replace   view ANALYTICS.DEV_xdai_staging.stg_orders
+  
+   as (
+    
+
+WITH source AS (
+    SELECT * FROM raw_data.shopco_production.raw_orders
+),
+
+cleaned AS (
+    SELECT
+        order_id,
+        customer_id,
+        order_date,
+        DATE_TRUNC('month', order_date) AS order_month,
+        DATE_TRUNC('quarter', order_date) AS order_quarter,
+        DATE_TRUNC('year', order_date) AS order_year,
+        EXTRACT(YEAR FROM order_date) AS order_year_number,
+        EXTRACT(MONTH FROM order_date) AS order_month_number,
+        DATEDIFF('day', order_date, CURRENT_DATE) AS days_since_order,
+        LOWER(TRIM(order_status)) AS order_status,
+        total_amount,
+        LOWER(TRIM(payment_method)) AS payment_method,
+        CASE WHEN LOWER(order_status) = 'delivered' THEN TRUE ELSE FALSE END AS is_delivered,
+        CASE WHEN LOWER(order_status) = 'cancelled' THEN TRUE ELSE FALSE END AS is_cancelled,
+        CURRENT_TIMESTAMP AS dbt_loaded_at
+    FROM source
+    WHERE order_id IS NOT NULL
+      AND total_amount > 0
+)
+
+SELECT * FROM cleaned
+  );
+[0m16:46:52.406795 [debug] [Thread-2  ]: Opening a new connection, currently in state init
+[0m16:46:52.407795 [debug] [Thread-3  ]: Opening a new connection, currently in state init
+[0m16:46:52.770151 [debug] [Thread-3  ]: Snowflake adapter: Snowflake query id: 01c3ee7e-0001-6e0b-0000-001b91e7b2c9
+[0m16:46:52.770151 [debug] [Thread-3  ]: Snowflake adapter: Snowflake error: 002003 (02000): SQL compilation error:
+Schema 'RAW_DATA.SHOPCO_PRODUCTION' does not exist or not authorized.
+[0m16:46:52.771153 [debug] [Thread-3  ]: Timing info for model.shopco_analytics.stg_orders (execute): 16:46:52.394795 => 16:46:52.771153
+[0m16:46:52.771153 [debug] [Thread-3  ]: On model.shopco_analytics.stg_orders: Close
+[0m16:46:52.783870 [debug] [Thread-1  ]: Snowflake adapter: Snowflake query id: 01c3ee7e-0001-6d7e-0000-001b91e782c9
+[0m16:46:52.783870 [debug] [Thread-1  ]: Snowflake adapter: Snowflake error: 002003 (02000): SQL compilation error:
+Schema 'RAW_DATA.SHOPCO_PRODUCTION' does not exist or not authorized.
+[0m16:46:52.784870 [debug] [Thread-1  ]: Timing info for model.shopco_analytics.stg_customers (execute): 16:46:52.387795 => 16:46:52.784870
+[0m16:46:52.784870 [debug] [Thread-1  ]: On model.shopco_analytics.stg_customers: Close
+[0m16:46:52.795409 [debug] [Thread-4  ]: Snowflake adapter: Snowflake query id: 01c3ee7e-0001-6d7e-0000-001b91e782cd
+[0m16:46:52.795409 [debug] [Thread-4  ]: Snowflake adapter: Snowflake error: 002003 (02000): SQL compilation error:
+Schema 'RAW_DATA.SHOPCO_PRODUCTION' does not exist or not authorized.
+[0m16:46:52.796408 [debug] [Thread-4  ]: Timing info for model.shopco_analytics.stg_products (execute): 16:46:52.361797 => 16:46:52.795409
+[0m16:46:52.796408 [debug] [Thread-4  ]: On model.shopco_analytics.stg_products: Close
+[0m16:46:52.802577 [debug] [Thread-2  ]: Snowflake adapter: Snowflake query id: 01c3ee7e-0001-6d81-0000-001b91e752c5
+[0m16:46:52.802577 [debug] [Thread-2  ]: Snowflake adapter: Snowflake error: 002003 (02000): SQL compilation error:
+Schema 'RAW_DATA.SHOPCO_PRODUCTION' does not exist or not authorized.
+[0m16:46:52.803576 [debug] [Thread-2  ]: Timing info for model.shopco_analytics.stg_order_items (execute): 16:46:52.391795 => 16:46:52.802577
+[0m16:46:52.803576 [debug] [Thread-2  ]: On model.shopco_analytics.stg_order_items: Close
+[0m16:46:52.889638 [debug] [Thread-3  ]: Database Error in model stg_orders (models\staging\stg_orders.sql)
+  002003 (02000): SQL compilation error:
+  Schema 'RAW_DATA.SHOPCO_PRODUCTION' does not exist or not authorized.
+  compiled Code at target\run\shopco_analytics\models\staging\stg_orders.sql
+[0m16:46:52.890638 [debug] [Thread-3  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8c7d8ee0-9e5f-40ef-8053-1d6b67230ea2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A9E94B7CA0>]}
+[0m16:46:52.891637 [error] [Thread-3  ]: 3 of 5 ERROR creating sql view model DEV_xdai_staging.stg_orders ............... [[31mERROR[0m in 0.55s]
+[0m16:46:52.892641 [debug] [Thread-3  ]: Finished running node model.shopco_analytics.stg_orders
+[0m16:46:52.892641 [debug] [Thread-3  ]: Began running node model.shopco_analytics.stg_web_events
+[0m16:46:52.893638 [info ] [Thread-3  ]: 5 of 5 START sql incremental model DEV_xdai_staging.stg_web_events ............. [RUN]
+[0m16:46:52.894640 [debug] [Thread-3  ]: Re-using an available connection from the pool (formerly model.shopco_analytics.stg_orders, now model.shopco_analytics.stg_web_events)
+[0m16:46:52.894640 [debug] [Thread-3  ]: Began compiling node model.shopco_analytics.stg_web_events
+[0m16:46:52.902639 [debug] [Thread-3  ]: Writing injected SQL for node "model.shopco_analytics.stg_web_events"
+[0m16:46:52.903638 [debug] [Thread-4  ]: Database Error in model stg_products (models\staging\stg_products.sql)
+  002003 (02000): SQL compilation error:
+  Schema 'RAW_DATA.SHOPCO_PRODUCTION' does not exist or not authorized.
+  compiled Code at target\run\shopco_analytics\models\staging\stg_products.sql
+[0m16:46:52.903638 [debug] [Thread-4  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8c7d8ee0-9e5f-40ef-8053-1d6b67230ea2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A9E959A190>]}
+[0m16:46:52.904641 [debug] [Thread-3  ]: Timing info for model.shopco_analytics.stg_web_events (compile): 16:46:52.895639 => 16:46:52.904641
+[0m16:46:52.904641 [error] [Thread-4  ]: 4 of 5 ERROR creating sql view model DEV_xdai_staging.stg_products ............. [[31mERROR[0m in 0.57s]
+[0m16:46:52.905638 [debug] [Thread-3  ]: Began executing node model.shopco_analytics.stg_web_events
+[0m16:46:52.905638 [debug] [Thread-4  ]: Finished running node model.shopco_analytics.stg_products
+[0m16:46:52.950639 [debug] [Thread-3  ]: Writing runtime sql for node "model.shopco_analytics.stg_web_events"
+[0m16:46:52.953640 [debug] [Thread-3  ]: Using snowflake connection "model.shopco_analytics.stg_web_events"
+[0m16:46:52.955640 [debug] [Thread-3  ]: On model.shopco_analytics.stg_web_events: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "shopco", "target_name": "dev", "node_id": "model.shopco_analytics.stg_web_events"} */
+create or replace transient table ANALYTICS.DEV_xdai_staging.stg_web_events
+         as
+        (
+
+WITH source AS (
+    SELECT * FROM raw_data.shopco_production.raw_web_events
+    
+),
+
+cleaned AS (
+    SELECT
+        event_id, session_id, customer_id,
+        LOWER(TRIM(event_type)) AS event_type,
+        event_timestamp,
+        DATE_TRUNC('hour', event_timestamp) AS event_hour,
+        DATE_TRUNC('day', event_timestamp) AS event_date,
+        page_url,
+        SPLIT_PART(page_url, '/', 3) AS page_domain,
+        SPLIT_PART(page_url, '/', 4) AS page_section,
+        product_id,
+        CASE WHEN LOWER(event_type) = 'page_view' THEN 1 ELSE 0 END AS is_page_view,
+        CASE WHEN LOWER(event_type) = 'product_view' THEN 1 ELSE 0 END AS is_product_view,
+        CASE WHEN LOWER(event_type) = 'add_to_cart' THEN 1 ELSE 0 END AS is_add_to_cart,
+        CASE WHEN LOWER(event_type) = 'checkout_start' THEN 1 ELSE 0 END AS is_checkout_start,
+        CASE WHEN customer_id IS NULL OR TRIM(customer_id) = '' THEN 'anonymous' ELSE 'logged_in' END AS user_type,
+        CURRENT_TIMESTAMP AS dbt_loaded_at
+    FROM source
+    WHERE event_id IS NOT NULL AND event_timestamp IS NOT NULL
+)
+
+SELECT * FROM cleaned
+        );
+[0m16:46:52.955640 [debug] [Thread-3  ]: Opening a new connection, currently in state closed
+[0m16:46:52.958641 [debug] [Thread-1  ]: Database Error in model stg_customers (models\staging\stg_customers.sql)
+  002003 (02000): SQL compilation error:
+  Schema 'RAW_DATA.SHOPCO_PRODUCTION' does not exist or not authorized.
+  compiled Code at target\run\shopco_analytics\models\staging\stg_customers.sql
+[0m16:46:52.959640 [debug] [Thread-2  ]: Database Error in model stg_order_items (models\staging\stg_order_items.sql)
+  002003 (02000): SQL compilation error:
+  Schema 'RAW_DATA.SHOPCO_PRODUCTION' does not exist or not authorized.
+  compiled Code at target\run\shopco_analytics\models\staging\stg_order_items.sql
+[0m16:46:52.959640 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8c7d8ee0-9e5f-40ef-8053-1d6b67230ea2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A9E959C730>]}
+[0m16:46:52.960640 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8c7d8ee0-9e5f-40ef-8053-1d6b67230ea2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A9E95B7C10>]}
+[0m16:46:52.960640 [error] [Thread-1  ]: 1 of 5 ERROR creating sql view model DEV_xdai_staging.stg_customers ............ [[31mERROR[0m in 0.63s]
+[0m16:46:52.961641 [debug] [Thread-1  ]: Finished running node model.shopco_analytics.stg_customers
+[0m16:46:52.961641 [error] [Thread-2  ]: 2 of 5 ERROR creating sql view model DEV_xdai_staging.stg_order_items .......... [[31mERROR[0m in 0.62s]
+[0m16:46:52.962638 [debug] [Thread-2  ]: Finished running node model.shopco_analytics.stg_order_items
+[0m16:46:53.327701 [debug] [Thread-3  ]: Snowflake adapter: Snowflake query id: 01c3ee7e-0001-6d7e-0000-001b91e782d1
+[0m16:46:53.327701 [debug] [Thread-3  ]: Snowflake adapter: Snowflake error: 002003 (02000): SQL compilation error:
+Schema 'RAW_DATA.SHOPCO_PRODUCTION' does not exist or not authorized.
+[0m16:46:53.328701 [debug] [Thread-3  ]: Timing info for model.shopco_analytics.stg_web_events (execute): 16:46:52.905638 => 16:46:53.327701
+[0m16:46:53.328701 [debug] [Thread-3  ]: On model.shopco_analytics.stg_web_events: Close
+[0m16:46:53.425998 [debug] [Thread-3  ]: Database Error in model stg_web_events (models\staging\stg_web_events.sql)
+  002003 (02000): SQL compilation error:
+  Schema 'RAW_DATA.SHOPCO_PRODUCTION' does not exist or not authorized.
+  compiled Code at target\run\shopco_analytics\models\staging\stg_web_events.sql
+[0m16:46:53.426999 [debug] [Thread-3  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8c7d8ee0-9e5f-40ef-8053-1d6b67230ea2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A9E9619970>]}
+[0m16:46:53.426999 [error] [Thread-3  ]: 5 of 5 ERROR creating sql incremental model DEV_xdai_staging.stg_web_events .... [[31mERROR[0m in 0.53s]
+[0m16:46:53.427999 [debug] [Thread-3  ]: Finished running node model.shopco_analytics.stg_web_events
+[0m16:46:53.428999 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:46:53.429999 [debug] [MainThread]: Connection 'create_ANALYTICS_DEV_xdai_staging' was properly closed.
+[0m16:46:53.429999 [debug] [MainThread]: Connection 'list_raw_data_DEV_xdai_shopco_production' was properly closed.
+[0m16:46:53.429999 [debug] [MainThread]: Connection 'list_ANALYTICS_snapshots' was properly closed.
+[0m16:46:53.431000 [debug] [MainThread]: Connection 'list_ANALYTICS_DEV_xdai_staging' was properly closed.
+[0m16:46:53.431000 [debug] [MainThread]: Connection 'list_ANALYTICS_DEV_xdai_marts' was properly closed.
+[0m16:46:53.431000 [debug] [MainThread]: Connection 'model.shopco_analytics.stg_customers' was properly closed.
+[0m16:46:53.431999 [debug] [MainThread]: Connection 'model.shopco_analytics.stg_order_items' was properly closed.
+[0m16:46:53.431999 [debug] [MainThread]: Connection 'model.shopco_analytics.stg_products' was properly closed.
+[0m16:46:53.431999 [debug] [MainThread]: Connection 'model.shopco_analytics.stg_web_events' was properly closed.
+[0m16:46:53.432999 [info ] [MainThread]: 
+[0m16:46:53.432999 [info ] [MainThread]: Finished running 4 view models, 1 incremental model in 0 hours 0 minutes and 5.84 seconds (5.84s).
+[0m16:46:53.433999 [debug] [MainThread]: Command end result
+[0m16:46:53.444999 [info ] [MainThread]: 
+[0m16:46:53.445999 [info ] [MainThread]: [31mCompleted with 5 errors and 0 warnings:[0m
+[0m16:46:53.445999 [info ] [MainThread]: 
+[0m16:46:53.445999 [error] [MainThread]:   Database Error in model stg_orders (models\staging\stg_orders.sql)
+  002003 (02000): SQL compilation error:
+  Schema 'RAW_DATA.SHOPCO_PRODUCTION' does not exist or not authorized.
+  compiled Code at target\run\shopco_analytics\models\staging\stg_orders.sql
+[0m16:46:53.447000 [info ] [MainThread]: 
+[0m16:46:53.447000 [error] [MainThread]:   Database Error in model stg_products (models\staging\stg_products.sql)
+  002003 (02000): SQL compilation error:
+  Schema 'RAW_DATA.SHOPCO_PRODUCTION' does not exist or not authorized.
+  compiled Code at target\run\shopco_analytics\models\staging\stg_products.sql
+[0m16:46:53.447000 [info ] [MainThread]: 
+[0m16:46:53.447999 [error] [MainThread]:   Database Error in model stg_customers (models\staging\stg_customers.sql)
+  002003 (02000): SQL compilation error:
+  Schema 'RAW_DATA.SHOPCO_PRODUCTION' does not exist or not authorized.
+  compiled Code at target\run\shopco_analytics\models\staging\stg_customers.sql
+[0m16:46:53.447999 [info ] [MainThread]: 
+[0m16:46:53.448999 [error] [MainThread]:   Database Error in model stg_order_items (models\staging\stg_order_items.sql)
+  002003 (02000): SQL compilation error:
+  Schema 'RAW_DATA.SHOPCO_PRODUCTION' does not exist or not authorized.
+  compiled Code at target\run\shopco_analytics\models\staging\stg_order_items.sql
+[0m16:46:53.448999 [info ] [MainThread]: 
+[0m16:46:53.448999 [error] [MainThread]:   Database Error in model stg_web_events (models\staging\stg_web_events.sql)
+  002003 (02000): SQL compilation error:
+  Schema 'RAW_DATA.SHOPCO_PRODUCTION' does not exist or not authorized.
+  compiled Code at target\run\shopco_analytics\models\staging\stg_web_events.sql
+[0m16:46:53.449999 [info ] [MainThread]: 
+[0m16:46:53.449999 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=5 SKIP=0 TOTAL=5
+[0m16:46:53.450999 [debug] [MainThread]: Command `dbt run` failed at 16:46:53.450999 after 6.59 seconds
+[0m16:46:53.450999 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A9E4D10D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A9E8434070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A9E95ADB80>]}
+[0m16:46:53.451999 [debug] [MainThread]: Flushing usage events

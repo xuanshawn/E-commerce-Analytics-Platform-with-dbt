@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_customers
+    description: Cleaned and standardized customer data
+    columns:
+      - name: customer_id
+        description: Primary key
+        tests:
+          - unique
+          - not_null
+      - name: email
+        description: Cleaned email address (lowercase, trimmed)
+        tests:
+          - not_null
+      - name: customer_tier
+        description: Loyalty tier (bronze, silver, gold, platinum)
+        tests:
+          - accepted_values:
+              values: ['bronze', 'silver', 'gold', 'platinum']

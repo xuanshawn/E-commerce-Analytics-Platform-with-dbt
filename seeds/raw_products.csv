@@ -1,0 +1,89 @@
+product_id,product_name,category,subcategory,brand,current_price,cost
+PRD-0001,Apple Laptops Plus,Electronics,Laptops,Apple,976.17,490.53
+PRD-0002,Samsung Laptops Pro,Electronics,Laptops,Samsung,372.66,213.78
+PRD-0003,Sony Laptops Plus,Electronics,Laptops,Sony,1342.66,683.0
+PRD-0004,LG Laptops Pro,Electronics,Laptops,LG,92.21,48.12
+PRD-0005,Dell Laptops Pro,Electronics,Laptops,Dell,87.48,45.48
+PRD-0006,Apple Phones Pro,Electronics,Phones,Apple,839.17,438.08
+PRD-0007,Samsung Phones Pro,Electronics,Phones,Samsung,1222.67,612.13
+PRD-0008,Sony Phones Plus,Electronics,Phones,Sony,1061.3,566.76
+PRD-0009,LG Phones Plus,Electronics,Phones,LG,1436.96,766.85
+PRD-0010,Dell Phones Pro,Electronics,Phones,Dell,189.24,110.66
+PRD-0011,Apple Headphones Pro,Electronics,Headphones,Apple,1219.34,698.65
+PRD-0012,Samsung Headphones Pro,Electronics,Headphones,Samsung,1460.02,785.28
+PRD-0013,Sony Headphones Pro,Electronics,Headphones,Sony,1251.64,703.24
+PRD-0014,LG Headphones Plus,Electronics,Headphones,LG,886.16,505.52
+PRD-0015,Dell Headphones Plus,Electronics,Headphones,Dell,379.45,200.71
+PRD-0016,Apple Cameras Plus,Electronics,Cameras,Apple,386.55,197.18
+PRD-0017,Samsung Cameras Plus,Electronics,Cameras,Samsung,970.74,520.79
+PRD-0018,Sony Cameras Pro,Electronics,Cameras,Sony,352.79,185.81
+PRD-0019,LG Cameras Plus,Electronics,Cameras,LG,988.65,554.55
+PRD-0020,Dell Cameras Plus,Electronics,Cameras,Dell,1106.23,571.19
+PRD-0021,Nike Shirts Pro,Clothing,Shirts,Nike,246.52,89.73
+PRD-0022,Adidas Shirts Pro,Clothing,Shirts,Adidas,174.25,66.96
+PRD-0023,Levi's Shirts Plus,Clothing,Shirts,Levi's,66.28,20.1
+PRD-0024,H&M Shirts Pro,Clothing,Shirts,H&M,75.45,24.23
+PRD-0025,Zara Shirts Pro,Clothing,Shirts,Zara,219.7,72.82
+PRD-0026,Nike Pants Plus,Clothing,Pants,Nike,105.76,41.4
+PRD-0027,Adidas Pants Pro,Clothing,Pants,Adidas,74.78,24.28
+PRD-0028,Levi's Pants Pro,Clothing,Pants,Levi's,74.27,26.62
+PRD-0029,H&M Pants Pro,Clothing,Pants,H&M,106.66,34.34
+PRD-0030,Zara Pants Plus,Clothing,Pants,Zara,132.76,41.03
+PRD-0031,Nike Shoes Pro,Clothing,Shoes,Nike,37.99,13.78
+PRD-0032,Adidas Shoes Plus,Clothing,Shoes,Adidas,112.05,34.33
+PRD-0033,Levi's Shoes Pro,Clothing,Shoes,Levi's,248.08,87.55
+PRD-0034,H&M Shoes Pro,Clothing,Shoes,H&M,216.0,65.05
+PRD-0035,Zara Shoes Plus,Clothing,Shoes,Zara,173.57,61.39
+PRD-0036,Nike Jackets Plus,Clothing,Jackets,Nike,163.91,51.0
+PRD-0037,Adidas Jackets Pro,Clothing,Jackets,Adidas,119.53,47.26
+PRD-0038,Levi's Jackets Plus,Clothing,Jackets,Levi's,74.42,26.05
+PRD-0039,H&M Jackets Plus,Clothing,Jackets,H&M,228.29,88.36
+PRD-0040,Zara Jackets Plus,Clothing,Jackets,Zara,163.43,58.98
+PRD-0041,IKEA Furniture Pro,Home & Garden,Furniture,IKEA,612.81,278.18
+PRD-0042,KitchenAid Furniture Plus,Home & Garden,Furniture,KitchenAid,430.8,172.34
+PRD-0043,Dyson Furniture Pro,Home & Garden,Furniture,Dyson,30.27,14.92
+PRD-0044,Black+Decker Furniture Plus,Home & Garden,Furniture,Black+Decker,667.03,287.32
+PRD-0045,IKEA Kitchen Plus,Home & Garden,Kitchen,IKEA,703.36,347.95
+PRD-0046,KitchenAid Kitchen Pro,Home & Garden,Kitchen,KitchenAid,396.02,161.15
+PRD-0047,Dyson Kitchen Plus,Home & Garden,Kitchen,Dyson,615.41,254.07
+PRD-0048,Black+Decker Kitchen Pro,Home & Garden,Kitchen,Black+Decker,446.05,190.24
+PRD-0049,IKEA Bedding Pro,Home & Garden,Bedding,IKEA,346.74,146.04
+PRD-0050,KitchenAid Bedding Plus,Home & Garden,Bedding,KitchenAid,587.27,246.72
+PRD-0051,Dyson Bedding Plus,Home & Garden,Bedding,Dyson,795.2,369.76
+PRD-0052,Black+Decker Bedding Plus,Home & Garden,Bedding,Black+Decker,420.78,173.4
+PRD-0053,IKEA Tools Plus,Home & Garden,Tools,IKEA,280.06,128.5
+PRD-0054,KitchenAid Tools Pro,Home & Garden,Tools,KitchenAid,187.65,76.39
+PRD-0055,Dyson Tools Pro,Home & Garden,Tools,Dyson,194.49,95.41
+PRD-0056,Black+Decker Tools Pro,Home & Garden,Tools,Black+Decker,70.55,29.9
+PRD-0057,Under Armour Fitness Pro,Sports,Fitness,Under Armour,93.34,33.9
+PRD-0058,Patagonia Fitness Pro,Sports,Fitness,Patagonia,232.14,92.22
+PRD-0059,The North Face Fitness Plus,Sports,Fitness,The North Face,324.12,119.61
+PRD-0060,Garmin Fitness Plus,Sports,Fitness,Garmin,177.68,69.71
+PRD-0061,Under Armour Outdoor Pro,Sports,Outdoor,Under Armour,293.61,122.53
+PRD-0062,Patagonia Outdoor Plus,Sports,Outdoor,Patagonia,48.28,18.84
+PRD-0063,The North Face Outdoor Plus,Sports,Outdoor,The North Face,345.19,129.4
+PRD-0064,Garmin Outdoor Plus,Sports,Outdoor,Garmin,184.51,72.36
+PRD-0065,Under Armour Team Sports Plus,Sports,Team Sports,Under Armour,107.17,47.4
+PRD-0066,Patagonia Team Sports Plus,Sports,Team Sports,Patagonia,345.06,139.76
+PRD-0067,The North Face Team Sports Pro,Sports,Team Sports,The North Face,398.72,172.89
+PRD-0068,Garmin Team Sports Plus,Sports,Team Sports,Garmin,370.36,161.06
+PRD-0069,Under Armour Cycling Plus,Sports,Cycling,Under Armour,198.91,73.87
+PRD-0070,Patagonia Cycling Pro,Sports,Cycling,Patagonia,32.81,12.73
+PRD-0071,The North Face Cycling Plus,Sports,Cycling,The North Face,113.16,48.48
+PRD-0072,Garmin Cycling Pro,Sports,Cycling,Garmin,174.55,77.8
+PRD-0073,Penguin Fiction Plus,Books,Fiction,Penguin,36.34,9.88
+PRD-0074,O'Reilly Fiction Pro,Books,Fiction,O'Reilly,23.13,6.87
+PRD-0075,Scholastic Fiction Plus,Books,Fiction,Scholastic,35.65,9.8
+PRD-0076,HarperCollins Fiction Pro,Books,Fiction,HarperCollins,37.79,9.46
+PRD-0077,Penguin Non-Fiction Plus,Books,Non-Fiction,Penguin,16.03,4.75
+PRD-0078,O'Reilly Non-Fiction Pro,Books,Non-Fiction,O'Reilly,17.48,4.54
+PRD-0079,Scholastic Non-Fiction Pro,Books,Non-Fiction,Scholastic,20.0,4.24
+PRD-0080,HarperCollins Non-Fiction Pro,Books,Non-Fiction,HarperCollins,20.56,5.33
+PRD-0081,Penguin Technical Pro,Books,Technical,Penguin,29.38,7.59
+PRD-0082,O'Reilly Technical Pro,Books,Technical,O'Reilly,55.67,12.27
+PRD-0083,Scholastic Technical Pro,Books,Technical,Scholastic,20.17,4.83
+PRD-0084,HarperCollins Technical Pro,Books,Technical,HarperCollins,23.3,5.4
+PRD-0085,Penguin Children's Pro,Books,Children's,Penguin,11.7,2.88
+PRD-0086,O'Reilly Children's Plus,Books,Children's,O'Reilly,58.8,12.19
+PRD-0087,Scholastic Children's Pro,Books,Children's,Scholastic,21.53,6.32
+PRD-0088,HarperCollins Children's Plus,Books,Children's,HarperCollins,52.84,12.52

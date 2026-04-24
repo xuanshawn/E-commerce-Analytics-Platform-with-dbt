@@ -1,0 +1,52 @@
+name: 'shopco_analytics'
+version: '1.0.0'
+config-version: 2
+
+# Project profile (maps to profiles.yml)
+profile: 'shopco'
+
+# Directories
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+# Compiled assets
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+# Model configurations
+models:
+  shopco_analytics:
+    # Staging models (views for flexibility)
+    staging:
+      +materialized: view
+      +database: staging
+      +schema: staging
+
+    # Intermediate models (ephemeral, not persisted)
+    intermediate:
+      +materialized: ephemeral
+
+    # Marts (tables for performance)
+    marts:
+      +materialized: table
+      +database: analytics
+      +schema: marts
+
+# Seeds: load into raw_data.shopco_production so sources.yml resolves correctly
+seeds:
+  shopco_analytics:
+    +schema: shopco_production
+    +database: raw_data
+
+# Tests
+# Note: store_failures requires CREATE TABLE permission in your target schema.
+# Set to false if your dbt user lacks DDL permissions.
+tests:
+  shopco_analytics:
+    +store_failures: false

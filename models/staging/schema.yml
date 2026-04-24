@@ -1,0 +1,4 @@
+version: 2
+
+# Staging model tests are defined in the individual <model>.yml files.
+# See stg_customers.yml, stg_orders.yml, etc.

@@ -1,0 +1,36 @@
+version: 2
+
+seeds:
+  - name: raw_customers
+    description: "Sample ShopCo customer data (500 rows). Loads into raw_data.shopco_production."
+    columns:
+      - name: customer_id
+        tests: [unique, not_null]
+      - name: email
+        tests: [unique, not_null]
+
+  - name: raw_orders
+    description: "Sample ShopCo order data (2,000 rows)."
+    columns:
+      - name: order_id
+        tests: [unique, not_null]
+      - name: customer_id
+        tests: [not_null]
+
+  - name: raw_order_items
+    description: "Sample ShopCo order line items (~4,900 rows)."
+    columns:
+      - name: order_item_id
+        tests: [unique, not_null]
+
+  - name: raw_products
+    description: "Sample ShopCo product catalog (88 rows)."
+    columns:
+      - name: product_id
+        tests: [unique, not_null]
+
+  - name: raw_web_events
+    description: "Sample ShopCo web events (3,000 rows)."
+    columns:
+      - name: event_id
+        tests: [unique, not_null]

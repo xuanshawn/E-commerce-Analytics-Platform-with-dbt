@@ -1,0 +1,88 @@
+version: 2
+
+models:
+  - name: fact_orders
+    description: |
+      Customer order fact table with aggregated metrics.
+      Primary table for order analytics and executive dashboards.
+
+      **Grain:** One row per order
+      **Update frequency:** 4x daily (2am, 8am, 2pm, 8pm)
+      **Owner:** Analytics Engineering Team
+
+    columns:
+      - name: order_id
+        description: "Unique identifier for each order (primary key)"
+        tests:
+          - unique
+          - not_null
+
+      - name: customer_id
+        description: "Foreign key to dim_customers"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_customers')
+              field: customer_id
+
+      - name: total_amount
+        description: "Total order value in USD"
+        tests:
+          - not_null
+
+      - name: customer_tier
+        description: "Customer loyalty tier at time of order (bronze, silver, gold, platinum)"
+        tests:
+          - accepted_values:
+              values: ['bronze', 'silver', 'gold', 'platinum']
+
+  - name: dim_customers
+    description: |
+      Customer dimension with lifetime metrics and segmentation.
+      Used for marketing targeting and customer success tracking.
+
+      **Grain:** One row per customer
+      **SCD Type:** Type 1 (current state only)
+
+    columns:
+      - name: customer_id
+        description: "Unique customer identifier (primary key)"
+        tests:
+          - unique
+          - not_null
+
+      - name: customer_segment
+        description: |
+          Calculated segment: never_purchased / one_time / repeat / loyal
+
+  - name: dim_products
+    description: "Product dimension with performance tiers."
+    columns:
+      - name: product_id
+        description: "Unique product identifier (primary key)"
+        tests:
+          - unique
+          - not_null
+
+  - name: fct_customer_cohorts
+    description: "Monthly cohort retention analysis. Grain: one row per cohort_month + months_since_acquisition."
+    columns:
+      - name: cohort_month
+        tests:
+          - not_null
+
+  - name: fct_product_performance
+    description: "Monthly product sales time-series. Grain: one row per product + order_month."
+    columns:
+      - name: product_id
+        tests:
+          - not_null
+
+  - name: fct_customer_ltv
+    description: "Customer lifetime value with RFM scoring and churn risk. Grain: one row per customer."
+    columns:
+      - name: customer_id
+        description: "Unique customer identifier (primary key)"
+        tests:
+          - unique
+          - not_null
