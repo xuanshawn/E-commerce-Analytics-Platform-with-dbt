@@ -1,0 +1,29 @@
+name: Deploy dbt Docs
+
+on:
+  workflow_run:
+    workflows: ["dbt Production Deploy"]
+    types: [completed]
+
+jobs:
+  deploy-docs:
+    runs-on: ubuntu-latest
+    env:
+      DBT_CLOUD_API_TOKEN: ${{ secrets.DBT_CLOUD_API_TOKEN }}
+      DBT_CLOUD_ACCOUNT_ID: ${{ secrets.DBT_CLOUD_ACCOUNT_ID }}
+      DBT_CLOUD_JOB_ID: ${{ secrets.DBT_PROD_JOB_ID }}
+    steps:
+      - name: Download docs artifacts from dbt Cloud
+        run: |
+          mkdir -p docs
+          for artifact in manifest.json catalog.json index.html; do
+            curl -H "Authorization: Token $DBT_CLOUD_API_TOKEN" \
+              "https://cloud.getdbt.com/api/v2/accounts/$DBT_CLOUD_ACCOUNT_ID/jobs/$DBT_CLOUD_JOB_ID/artifacts/$artifact" \
+              -o "docs/$artifact"
+          done
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs

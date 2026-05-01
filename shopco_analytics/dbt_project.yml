@@ -41,7 +41,7 @@ models:
 # Seeds: load into raw_data.shopco_production so sources.yml resolves correctly
 seeds:
   shopco_analytics:
-    +schema: shopco_production
+    +schema: shopco_raw
     +database: raw_data
 
 # Tests

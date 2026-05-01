@@ -4,7 +4,7 @@ sources:
   - name: ecommerce
     description: Raw e-commerce data from ShopCo's transactional database
     database: raw_data
-    schema: shopco_production
+    schema: shopco_raw
 
     tables:
       - name: raw_customers

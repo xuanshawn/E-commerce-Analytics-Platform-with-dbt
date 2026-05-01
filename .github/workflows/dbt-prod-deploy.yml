@@ -1,0 +1,23 @@
+name: dbt Production Deploy
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger dbt Cloud production job
+        run: |
+          curl -X POST \
+            -H "Authorization: Token ${{ secrets.DBT_CLOUD_API_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            "https://cloud.getdbt.com/api/v2/accounts/${{ secrets.DBT_CLOUD_ACCOUNT_ID }}/jobs/${{ secrets.DBT_PROD_JOB_ID }}/run/"
+
+      - name: Notify Slack
+        if: always()
+        run: |
+          curl -X POST ${{ secrets.SLACK_WEBHOOK_URL }} \
+            -H 'Content-Type: application/json' \
+            -d '{"text":"dbt production deployment triggered for shopco-analytics"}'

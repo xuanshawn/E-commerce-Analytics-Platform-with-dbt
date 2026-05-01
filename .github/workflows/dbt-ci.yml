@@ -1,0 +1,55 @@
+name: dbt CI
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'shopco_analytics/models/**'
+      - 'shopco_analytics/tests/**'
+      - 'shopco_analytics/macros/**'
+      - 'shopco_analytics/snapshots/**'
+      - 'shopco_analytics/dbt_project.yml'
+
+jobs:
+  dbt-ci:
+    runs-on: ubuntu-latest
+    env:
+      DBT_PROFILES_DIR: ./shopco_analytics
+      DBT_CLOUD_API_TOKEN: ${{ secrets.DBT_CLOUD_API_TOKEN }}
+      DBT_CLOUD_ACCOUNT_ID: ${{ secrets.DBT_CLOUD_ACCOUNT_ID }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dbt
+        run: pip install dbt-snowflake==1.7.0
+
+      - name: Download production manifest
+        run: |
+          curl --fail -H "Authorization: Token $DBT_CLOUD_API_TOKEN" \
+            "https://cloud.getdbt.com/api/v2/accounts/$DBT_CLOUD_ACCOUNT_ID/runs/latest/artifacts/manifest.json" \
+            -o manifest.json || { echo "ERROR: Failed to download manifest. Check DBT_CLOUD_API_TOKEN and DBT_CLOUD_ACCOUNT_ID secrets."; exit 1; }
+
+      - name: Run dbt (Slim CI)
+        working-directory: shopco_analytics
+        run: |
+          dbt run --select state:modified+ --defer --state ../
+          dbt test --select state:modified+ --defer --state ../
+
+      - name: Comment PR with results
+        if: always()
+        uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: 'dbt CI completed! Check logs for details.'
+            })
