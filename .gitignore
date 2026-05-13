@@ -13,3 +13,5 @@ venv/
 # Environment variables
 .env
 *.env
+rsa_key.p8
+rsa_key.pub
