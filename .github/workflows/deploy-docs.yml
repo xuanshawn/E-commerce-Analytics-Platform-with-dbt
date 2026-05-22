@@ -5,6 +5,10 @@ on:
     workflows: ["dbt Production Deploy"]
     types: [completed]
 
+permissions:
+  contents: write
+  pages: write
+
 jobs:
   deploy-docs:
     runs-on: ubuntu-latest
